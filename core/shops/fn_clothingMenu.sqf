@@ -11,7 +11,7 @@ if((_this select 3) in ["detectiveclothing"] && playerside != west) exitWith {hi
 if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "You are not a EMS!"; closeDialog 0;};
 
 if ((this select 3) in ["sertclothing"]) then {
-    if (__GETC__(life_coplevel) < 2) exitWith {"Not high enough cop level";};
+    if (__GETC__(life_coplevel) < 2) exitWith {"Not high enough cop level"; closeDialog 0;};
 };
 
 life_clothing_store = _this select 3;
