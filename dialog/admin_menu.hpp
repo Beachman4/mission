@@ -218,8 +218,8 @@ class life_admin_menu {
 		};
 		class TpInFront : Life_RscButtonMenu {
 			idc = 2919;
-			text = "$STR_Admin_MassTP";
-			onButtonClick = "[] call life_fnc_massteleport;";
+			text = "$STR_Admin_KickP";
+			onButtonClick = "[] call life_fnc_adminKick;";
 			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.975;
 			w = (6.25 / 40);

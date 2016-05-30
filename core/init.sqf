@@ -91,7 +91,6 @@ life_fnc_moveIn = compileFinal
 	player moveInCargo (_this select 0);
 ";
 [] execVM "core\init_survival.sqf";
-[] execVM "functions\sys_core\core_checkWhitelist.sqf";
 __CONST__(life_paycheck,life_paycheck);
 player setVariable["stealth", false, true];
 

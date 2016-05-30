@@ -6,7 +6,7 @@
 	Description:
 	Teleport to chosen position.
 */
-if(FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0;};
+if(FETCH_CONST(life_adminlevel) < 3) exitWith {closeDialog 0;};
 
 [] spawn {
   while {dialog} do {
@@ -15,9 +15,14 @@ if(FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0;};
   };
 };
 
+
 tele={
 	_pos = [_this select 0, _this select 1, _this select 2];
-	(vehicle player) setpos [_pos select 0, _pos select 1, 0];
+    if (FETCH_CONST(life_adminlevel) == 3) then {
+        (player) setpos [_pos select 0, _pos select 1, 0];
+    } else {
+	   (vehicle player) setpos [_pos select 0, _pos select 1, 0];
+    };
 	onMapSingleClick "";
 	openMap [false, false];
 	hint "You have teleported to your selected position";

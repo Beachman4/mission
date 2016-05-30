@@ -6,7 +6,7 @@
 	Description:
 	Teleport selected player to you.
 */
-if(FETCH_CONST(life_adminlevel) == 0) exitWith {closeDialog 0;};
+if(FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0;};
 
 private["_target"];
 _target = lbData[2902,lbCurSel (2902)];

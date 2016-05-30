@@ -16,7 +16,7 @@ if(_disableBuy) then {
 	ctrlEnable [2309,false];
 };
 if (_shop == "sert_car" OR _shop == "sert_air") then {
-    if (__GETC__(life_coplevel) < 2) exitWith {"You are not high enough cop level."; closeDialog 0;};
+    if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};
 };
 _vehicleList = [_shop] call life_fnc_vehicleListCfg;
 _control = ((findDisplay 2300) displayCtrl 2302);

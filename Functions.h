@@ -206,6 +206,7 @@ class Life_Client_Core
         class openadminmenu {};
         class massteleport {};
         class adminRepair {};
+        class adminKick {};
 	};
 
 	class Player_Menu

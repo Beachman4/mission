@@ -10,6 +10,11 @@ private["_value","_action"];
 if(FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 _value = parseNumber(ctrlText 9922);
 _reason = ctrlText 9923;
+if (FETCH_CONST(life_adminlevel) < 4) then {
+    if (_value > 50000) exitWith {
+        hint "You can't give out that much!";
+    };
+};
 if(_value < 0) exitWith {};
 if(_value > 999999) exitWith {hint localize "STR_ANOTF_Fail"};
 //if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_AIM_notnumeric"};
