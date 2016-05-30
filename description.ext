@@ -155,7 +155,7 @@ class CfgDebriefing
     class kicked
     {
         title = "You were kicked off";
-        subtitle = "KICKED YOOO";
+        subtitle = "KICKED YOOO - Staff, cause we don't like you";
         description = "YOU WERE KICKED OFF, GET IT THROUGH YOUR HEAD";
         pictureBackground = "";
         picture = "";

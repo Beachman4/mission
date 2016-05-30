@@ -66,10 +66,11 @@ switch(_shop) do
         };
         case "cop_sert":
         {
-            if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};
+            /*if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};*/
             switch (true) do
             {
                 case (playerSide != west): {"You are not a police officer"};
+                case (__GETC__(life_coplevel) < 2): {hint "You are not high enough cop level."; closeDialog 0;};
                 default
                 {
                     ["Sert Weapon Shop", [["RH_M4m_b", "M4A1 Magpul Black", 10],["RH_fa556", nil, 10],["FHQ_acc_ANPEQ15_black", nil, 10],["RH_compm4s", nil, 10],["RH_30Rnd_556x45_M855A1",nil,10],["optic_mas_Arco_blk", nil,10],["optic_mas_acog_eo", nil, 10],["acc_pointer_IR", nil,10],["srifle_mas_m110", "M110 Rifle",10],["FHQ_optic_TWS3050", nil, 10],["muzzle_mas_snds_SH", nil,10],["RH_SFM952V", nil,10],["optic_LRPS",nil,10],["optic_LRPS",nil,10],["20Rnd_mas_762x51_Stanag",nil,10]]];  
