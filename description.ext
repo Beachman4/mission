@@ -151,5 +151,14 @@ class CfgDebriefing
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
-    }
+    };
+    class kicked
+    {
+        title = "You were kicked off";
+        subtitle = "KICKED YOOO";
+        description = "YOU WERE KICKED OFF, GET IT THROUGH YOUR HEAD";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
 };
