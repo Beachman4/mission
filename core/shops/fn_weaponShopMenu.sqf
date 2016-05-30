@@ -9,10 +9,11 @@
 private["_config","_itemInfo","_itemList"];
 uiNamespace setVariable ["Weapon_Shop",_this select 3];
 
-disableSerialization;
 if ((_this select 3) == "cop_sert") then {
     if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};
 };
+
+disableSerialization;
 if(!(createDialog "life_weapon_shop")) exitwith {};
 
 _config = [_this select 3] call life_fnc_weaponShopCfg;
