@@ -1,3 +1,4 @@
+#include<macro.h>
 private["_list","_clothes","_pic","_filter"];
 createDialog "Life_Clothing";
 disableSerialization;

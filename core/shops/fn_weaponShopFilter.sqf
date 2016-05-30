@@ -1,3 +1,4 @@
+#include<macro.h>
 private["_itemList","_index","_config","_priceTag"];
 _index = [_this,1,-1,[0]] call BIS_fnc_param;
 _shop = uiNamespace getVariable ["Weapon_Shop",""];

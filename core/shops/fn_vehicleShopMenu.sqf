@@ -1,3 +1,4 @@
+#include<macro.h>
 private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy"];
 _shop = [(_this select 3),0,"",[""]] call BIS_fnc_param;
 _sideCheck = [(_this select 3),1,sideUnknown,[civilian]] call BIS_fnc_param;
