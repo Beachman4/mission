@@ -10,6 +10,10 @@ if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "
 if((_this select 3) in ["detectiveclothing"] && playerside != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "You are not a EMS!"; closeDialog 0;};
 
+if ((this select 3) in ["sertclothing"]) then {
+    if (__GETC__(life_coplevel) < 2) exitWith {"Not high enough cop level";};
+};
+
 life_clothing_store = _this select 3;
 _var = [life_clothing_store,0] call life_fnc_licenseType;
 if(_var select 0 != "") then

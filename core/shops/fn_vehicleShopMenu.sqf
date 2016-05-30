@@ -14,6 +14,9 @@ ctrlSetText [2301,((_this select 3) select 4)];
 if(_disableBuy) then {
 	ctrlEnable [2309,false];
 };
+if (_shop == "sert_car" OR _shop == "sert_air") then {
+    if (__GETC__(life_coplevel) < 2) exitWith {"You are not high enough cop level.";};
+};
 _vehicleList = [_shop] call life_fnc_vehicleListCfg;
 _control = ((findDisplay 2300) displayCtrl 2302);
 lbClear _control;

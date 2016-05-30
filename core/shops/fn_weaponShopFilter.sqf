@@ -14,6 +14,9 @@ switch (_index) do
 {
 	case 0:
 	{
+        if (_shop == "cop_sert") then {
+            if (__GETC__(life_coplevel) < 2) exitWith {"You are not high enough cop level.";};
+        };
 		_config = [_shop] call life_fnc_weaponShopCfg;
 		{
 			_itemInfo = [_x select 0] call life_fnc_fetchCfgDetails;
