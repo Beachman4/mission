@@ -1,3 +1,9 @@
+/
+LOL
+*/
+
+
+
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
