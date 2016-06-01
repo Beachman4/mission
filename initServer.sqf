@@ -25,11 +25,38 @@ ffg_to_hide = [2270, 8309, 8361, 8308, 2277, 2273, 2284, 8374, 2250, 2246, 2243,
                19305, 19334, 19320, 19400, 19333, 19283, 19393, 19287, 19324, 19302, 19335, 19374, 19389, 19358, 19357, 19292, 19297, 19367, 19412, 19318, 19280, 19327, 19401, 19349, 19397, 19344, 
                19345, 19295, 19317, 19294, 19340, 19288, 19326, 19277, 19365, 19332, 19346, 19399, 19388, 19338, 19307, 19257, 19342, 19395, 19356, 19310, 19410, 19316, 19396, 19364, 19373, 19259, 
                19337, 19409, 19290, 19281, 19279, 19347, 19309, 19330, 19308, 19343, 19306, 19415, 19414, 19284, 19403, 19407, 19298, 19402, 19336, 19369, 19359, 19375, 19300, 19314, 35372, 35352,
-               105750];
+               105750,33506, 33504, 33494, 33492, 33491, 33495, 33606, 33604, 33609, 33493,33502,33500, 33600, 33605, 33607, 33603,33608,33582, 33751, 33577, 33575];
 {
     ([0,0,0] nearestObject _x) hideObjectGlobal true;
 } foreach ffg_to_hide;
 
+_markername="sert_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects;
+_markername="sert_2";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="sert_3";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="sert_4";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="rebel_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="rebel_2";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="rebel_3";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="rebel_4";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="copbase_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
 
 while {true} do
 {
