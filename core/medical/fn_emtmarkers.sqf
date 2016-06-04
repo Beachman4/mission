@@ -16,7 +16,7 @@ if(visibleMap) then {
 	//Create markers
 	{
 		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-		_marker setMarkerColorLocal "ColorGreen";
+		_marker setMarkerColorLocal "ColorRed";
 		_marker setMarkerTypeLocal "Mil_triangle";
 		_marker setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
 	
