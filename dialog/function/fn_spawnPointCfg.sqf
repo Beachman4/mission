@@ -13,7 +13,8 @@ switch (_side) do
 	{
 		_return = [
 			["civ_spawn_1","Union City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_2","Falls Church","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_2","Falls Church","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_3","Barnstable","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 		if(count life_houses > 0) then {
 			{

@@ -57,9 +57,12 @@ _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkers
 _markername="copbase_1";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects; 
-_markername="town_1";
+_markername="tree_1";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects;
+{hideObjectGlobal _x} foreach _terrainobjects; 
+_markername="town_2";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects; 
 
 while {true} do
 {
