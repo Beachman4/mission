@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=14278;
+		nextID=14281;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5484.3892,17.105381,4356.2744};
-		dir[]={0.43627933,-0.18948252,-0.87963861};
-		up[]={0.084193125,0.98188341,-0.16975261};
-		aside[]={-0.89586735,-7.2643161e-008,-0.44432837};
+		pos[]={3277.5107,58.54155,4012.3618};
+		dir[]={-0.33841357,-0.71974999,-0.60619116};
+		up[]={-0.35084212,0.69422561,-0.62845486};
+		aside[]={-0.87316626,2.1839514e-007,0.48745584};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5265;
+		items=5267;
 		class Item0
 		{
 			dataType="Marker";
@@ -1262,7 +1262,7 @@ class Mission
 			text="Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
-			angle=358.25797;
+			angle=358.25793;
 			id=96;
 			atlOffset=81.918617;
 		};
@@ -108614,6 +108614,34 @@ class Mission
 			};
 			id=14276;
 			atlOffset=0.074998856;
+		};
+		class Item5265
+		{
+			dataType="Marker";
+			position[]={3264.0781,15.523353,3983.8848};
+			name="car_g_r5";
+			type="Empty";
+			angle=270.43796;
+			id=14279;
+			atlOffset=0.52335262;
+		};
+		class Item5266
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3270.075,15.698975,3983.6909};
+				angles[]={0,4.7339087,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_r5"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			};
+			id=14278;
+			type="A3L_Savepoint";
 		};
 	};
 };
