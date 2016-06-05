@@ -108261,7 +108261,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={2905.9155,15,3999.2783};
-			name="station_1";
+			name="station_m_1";
 			text="Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";

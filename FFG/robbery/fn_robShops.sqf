@@ -26,13 +26,13 @@ _marker = switch (_shop) do {
 
 //Giving the shop a friendly name.
 _shopName = switch (_shop) do {
-  case station_1: {"station_m_1"};
-  case station_2: {"station_m_2"};
-  case station_3: {"station_m_3"};
-  case station_4: {"station_m_4"};
-  case market_1: {"market_m_1"};
-  case market_2: {"market_m_2"};
-  case market_3: {"market_m_3"};
+  case station_1: {"Waterford Gas Station"};
+  case station_2: {"Watkins Glen Gas Station"};
+  case station_3: {"Falls Church Gas Station"};
+  case station_4: {"Barnstable Gas Station"};
+  case market_1: {"Union City Market"};
+  case market_2: {"Falls Church Market"};
+  case market_3: {"Barnstable Market"};
 };	
 
 if (isNil "_marker") exitWith {};
