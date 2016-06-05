@@ -131,4 +131,8 @@ switch(_shop) do
         {
                 ["General Store",[["ItemMap",nil,60],["FirstAidKit",nil,250],["itemRadio",nil,900],["tf_anprc155","Long Range Radio",2500],["Binocular",nil,1250],["ItemGPS",nil,750],["ToolKit",nil,500],["NVGoggles_OPFOR",nil,5000],["NVGoggles",nil,5000]]];
         };
+		case "gas":
+		{
+				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750]];
+		}
 };
