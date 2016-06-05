@@ -8,18 +8,18 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=14260;
+		nextID=14264;
 	};
 	class MarkerIDProvider
 	{
-		nextID=281;
+		nextID=282;
 	};
 	class Camera
 	{
-		pos[]={3768.1548,40,3102.8005};
-		dir[]={0.0016268452,-0.99994999,0.009866558};
-		up[]={0.16267997,0.00999978,0.98662817};
-		aside[]={0.98667753,0,-0.16268811};
+		pos[]={5302.9473,33.947704,2379.0186};
+		dir[]={0.38210148,-0.77378947,0.50528359};
+		up[]={0.4667297,0.63343441,0.61719447};
+		aside[]={0.79764706,-9.1735274e-007,-0.60318857};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5255;
+		items=5259;
 		class Item0
 		{
 			dataType="Marker";
@@ -1234,14 +1234,14 @@ class Mission
 		class Item64
 		{
 			dataType="Marker";
-			position[]={5412.2295,17.703861,4397.3955};
+			position[]={5486.2305,17.703861,4351.6772};
 			name="Gen_3_1_1";
-			text="Market";
+			text="Market 2";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
-			angle=359.08795;
+			angle=359.08798;
 			id=93;
-			atlOffset=2.7038612;
+			atlOffset=2.3651028;
 		};
 		class Item65
 		{
@@ -1257,14 +1257,14 @@ class Mission
 		class Item66
 		{
 			dataType="Marker";
-			position[]={3595.4622,103.71368,3146.2998};
-			name="Gen_3_1_1_1";
-			text="Market";
+			position[]={3482.5237,103.71368,2922.5532};
+			name="station_m_1";
+			text="Market 1";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
-			angle=358.25754;
+			angle=358.25797;
 			id=96;
-			atlOffset=85.688347;
+			atlOffset=81.918617;
 		};
 		class Item67
 		{
@@ -6002,19 +6002,41 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3595.6904,15.001432,3146.4329};
-						angles[]={0,4.8273473,0};
+						position[]={3482.8523,15.269436,2922.376};
+						angles[]={0,4.827354,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick'em up!"", life_fnc_robShops];";
 					};
 					id=615;
 					type="C_man_1";
-					atlOffset=-6.6757202e-006;
+					atlOffset=0.26799679;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item21
 				{
@@ -6081,18 +6103,41 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5412.1509,15.001439,4396.6548};
-						angles[]={0,3.1316967,0};
+						position[]={5486.772,15.335648,4351.5884};
+						angles[]={0,0.038871437,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops];";
 					};
 					id=620;
 					type="C_man_1";
+					atlOffset=0.33420849;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item25
 				{
@@ -6707,19 +6752,41 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5247.9961,15.001432,2156.2405};
-						angles[]={0,4.8273473,0};
+						position[]={5247.9961,15.001439,2156.24};
+						angles[]={0,4.827354,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops];";
 					};
 					id=13317;
 					type="C_man_1";
-					atlOffset=-6.6757202e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item57
 				{
@@ -95802,7 +95869,7 @@ class Mission
 			dataType="Marker";
 			position[]={5248.1157,100.68825,2156.3665};
 			name="Gen_3_1_1_2";
-			text="Market";
+			text="Market 3";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			id=13314;
@@ -108185,6 +108252,47 @@ class Mission
 			type="Empty";
 			angle=19.306999;
 			id=14259;
+		};
+		class Item5255
+		{
+			dataType="Marker";
+			position[]={2905.9155,15,3999.2783};
+			name="marker_281";
+			text="Gas Station 1";
+			type="A3L_Fuel_Icon";
+			colorName="ColorGreen";
+			id=14260;
+		};
+		class Item5256
+		{
+			dataType="Marker";
+			position[]={3782.7048,15.055177,4120.8584};
+			name="marker_282";
+			text="Gas Station 2";
+			type="A3L_Fuel_Icon";
+			colorName="ColorGreen";
+			id=14261;
+			atlOffset=0.055176735;
+		};
+		class Item5257
+		{
+			dataType="Marker";
+			position[]={5443.0835,15.020001,4405.6685};
+			name="marker_283";
+			text="Gas Station 3";
+			type="A3L_Fuel_Icon";
+			colorName="ColorGreen";
+			id=14262;
+		};
+		class Item5258
+		{
+			dataType="Marker";
+			position[]={5317.2119,15.02,2395.1514};
+			name="marker_284";
+			text="Gas Station 4";
+			type="A3L_Fuel_Icon";
+			colorName="ColorGreen";
+			id=14263;
 		};
 	};
 };
