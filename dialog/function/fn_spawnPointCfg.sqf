@@ -5,8 +5,6 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Sheriff HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_2","SERT HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 	case civilian:
