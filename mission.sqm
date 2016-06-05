@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=14255;
+		nextID=14260;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5278.4268,114.66686,4299.8149};
-		dir[]={0.61093366,-0.78111726,-0.12991031};
-		up[]={0.76406664,0.62425768,-0.1624805};
-		aside[]={-0.20801179,3.7465361e-006,-0.97819066};
+		pos[]={3768.1548,40,3102.8005};
+		dir[]={0.0016268452,-0.99994999,0.009866558};
+		up[]={0.16267997,0.00999978,0.98662817};
+		aside[]={0.98667753,0,-0.16268811};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5252;
+		items=5255;
 		class Item0
 		{
 			dataType="Marker";
@@ -10332,10 +10332,33 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;    this allowDamage false;    this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];   this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];  this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];  this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]];";
+						init="this enableSimulation false;     " \n "this allowDamage false;     " \n "this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    " \n "this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    " \n "this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   " \n "this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   " \n "this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   " \n "this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   " \n "this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]]; " \n "this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Fetching Vehicles....""];    " \n "life_garage_sp = ""med_car_3"";  }];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=1380;
 					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -108087,6 +108110,81 @@ class Mission
 			id=14195;
 			type="01_bushes_01_b_canina2s_summer";
 			atlOffset=-1.1444092e-005;
+		};
+		class Item5252
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5275.4668,15.045439,2540.498};
+						angles[]={0,3.1341748,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_tow"",civilian,""civ_car_5"",""civ"",""Tow Shop""]];  " \n "this setVariable[""realname"", ""Tow Shop""];";
+						isPlayer=1;
+					};
+					id=14256;
+					type="C_man_p_beggar_F";
+					atlOffset=0.00036621094;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14255;
+			atlOffset=0.00036621094;
+		};
+		class Item5253
+		{
+			dataType="Marker";
+			position[]={5275.6431,15.043633,2540.8906};
+			name="tow";
+			text="Tow Shop";
+			type="A3L_Store_Green_Icon";
+			colorName="ColorBlue";
+			id=14257;
+		};
+		class Item5254
+		{
+			dataType="Marker";
+			position[]={3767.866,15,3105.2295};
+			name="med_air_hs";
+			type="Empty";
+			angle=19.306999;
+			id=14259;
 		};
 	};
 };
