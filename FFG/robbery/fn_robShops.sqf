@@ -15,18 +15,24 @@ _pause = 300;
 
 //Identifying the associated marker with the shop.
 _marker = switch (_shop) do {
-  case gs_1: {"g_s_1"};
+  case station_1: {"station_m_1"};
+  case station_2: {"station_m_2"};
+  case station_3: {"station_m_3"};
+  case station_4: {"station_m_4"};
+  case market_1: {"market_m_1"};
+  case market_2: {"market_m_2"};
+  case market_3: {"market_m_3"};
 };
 
 //Giving the shop a friendly name.
 _shopName = switch (_shop) do {
-  case gs_1: {"Gas Station 1"}
-  case gs_2: {"Gas Station 2"}
-  case gs_3: {"Gas Station 3"}
-  case gs_4: {"Gas Station 4"}
-  case station_m_1: {"Union City Market"}
-  case station_m_2: {"Falls Church Market"}
-  case station_m_3: {"Barnstable Market"};
+  case station_1: {"station_m_1"};
+  case station_2: {"station_m_2"};
+  case station_3: {"station_m_3"};
+  case station_4: {"station_m_4"};
+  case market_1: {"market_m_1"};
+  case market_2: {"market_m_2"};
+  case market_3: {"market_m_3"};
 };	
 
 if (isNil "_marker") exitWith {};

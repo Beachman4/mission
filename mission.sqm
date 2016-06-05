@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=14264;
+		nextID=14278;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5302.9473,33.947704,2379.0186};
-		dir[]={0.38210148,-0.77378947,0.50528359};
-		up[]={0.4667297,0.63343441,0.61719447};
-		aside[]={0.79764706,-9.1735274e-007,-0.60318857};
+		pos[]={5484.3892,17.105381,4356.2744};
+		dir[]={0.43627933,-0.18948252,-0.87963861};
+		up[]={0.084193125,0.98188341,-0.16975261};
+		aside[]={-0.89586735,-7.2643161e-008,-0.44432837};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5259;
+		items=5265;
 		class Item0
 		{
 			dataType="Marker";
@@ -1235,8 +1235,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5486.2305,17.703861,4351.6772};
-			name="Gen_3_1_1";
-			text="Market 2";
+			name="market_m_2";
+			text="Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			angle=359.08798;
@@ -1258,8 +1258,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3482.5237,103.71368,2922.5532};
-			name="station_m_1";
-			text="Market 1";
+			name="market_m_1";
+			text="Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			angle=358.25797;
@@ -6002,18 +6002,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3482.8523,15.269436,2922.376};
+						position[]={3482.8521,15.269439,2922.376};
 						angles[]={0,4.827354,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick'em up!"", life_fnc_robShops];";
+						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="market_1";
 					};
 					id=615;
 					type="C_man_1";
-					atlOffset=0.26799679;
+					atlOffset=0.26799965;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6103,18 +6104,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5486.772,15.335648,4351.5884};
-						angles[]={0,0.038871437,0};
+						position[]={5486.772,15.335439,4351.5889};
+						angles[]={0,0.038868483,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops];";
+						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="market_2";
 					};
 					id=620;
 					type="C_man_1";
-					atlOffset=0.33420849;
+					atlOffset=0.33399963;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6760,7 +6762,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops];";
+						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="market_3";
 					};
 					id=13317;
 					type="C_man_1";
@@ -62309,8 +62312,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5590.2339,17.365982,2287.9675};
-				angles[]={6.2606897,5.2780671,6.2731848};
+				position[]={5240.7642,17.989059,2148.3096};
+				angles[]={0,5.2780671,0};
 			};
 			side="Empty";
 			flags=4;
@@ -62319,6 +62322,7 @@ class Mission
 			};
 			id=11448;
 			type="A3L_Factory";
+			atlOffset=7.6293945e-006;
 		};
 		class Item2810
 		{
@@ -95868,8 +95872,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5248.1157,100.68825,2156.3665};
-			name="Gen_3_1_1_2";
-			text="Market 3";
+			name="market_m_3";
+			text="Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			id=13314;
@@ -108257,8 +108261,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={2905.9155,15,3999.2783};
-			name="marker_281";
-			text="Gas Station 1";
+			name="station_1";
+			text="Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14260;
@@ -108267,8 +108271,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3782.7048,15.055177,4120.8584};
-			name="marker_282";
-			text="Gas Station 2";
+			name="station_m_2";
+			text="Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14261;
@@ -108278,8 +108282,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5443.0835,15.020001,4405.6685};
-			name="marker_283";
-			text="Gas Station 3";
+			name="station_m_3";
+			text="Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14262;
@@ -108288,11 +108292,328 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5317.2119,15.02,2395.1514};
-			name="marker_284";
-			text="Gas Station 4";
+			name="station_m_4";
+			text="Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14263;
+		};
+		class Item5259
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5326.2852,15.099439,2397.7542};
+						angles[]={0,4.5120778,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false;  " \n "this enableSimulation false;  " \n "removeHeadgear this; " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""]; " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""]; " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="station_4";
+					};
+					id=14267;
+					type="C_man_polo_5_F";
+					atlOffset=0.077999115;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14266;
+			atlOffset=0.077999115;
+		};
+		class Item5260
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5325.6851,14.999988,2397.7886};
+				angles[]={0,1.5560987,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=14268;
+			type="Land_CashDesk_F";
+			atlOffset=-1.2397766e-005;
+		};
+		class Item5261
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2893.427,15.503439,4003.7361};
+						angles[]={0,1.4674903,0};
+					};
+					side="Civilian";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="station_1";
+					};
+					id=14272;
+					type="C_man_1";
+					atlOffset=0.50199986;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14271;
+			atlOffset=0.50199986;
+		};
+		class Item5262
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3772.4241,15.615479,4122.7314};
+						angles[]={0,1.4674903,0};
+					};
+					side="Civilian";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="station_2";
+					};
+					id=14274;
+					type="C_man_1";
+					atlOffset=0.61404037;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14273;
+			atlOffset=0.61404037;
+		};
+		class Item5263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5434.9653,15,4405.646};
+				angles[]={0,4.7991667,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=14275;
+			type="Land_CashDesk_F";
+		};
+		class Item5264
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5434.2012,15.096439,4405.6489};
+						angles[]={0,1.4674903,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						name="station_3";
+					};
+					id=14277;
+					type="C_man_1";
+					atlOffset=0.074998856;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14276;
+			atlOffset=0.074998856;
 		};
 	};
 };

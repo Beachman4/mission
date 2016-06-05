@@ -7,7 +7,7 @@
 */
 private["_shop"];
 
-_shop = [gs_1, gs_2, gs_3, gs_4, market_1, market_2, market_3];
+_shop = [station_1, station_2, station_3, station_4, market_1, market_2, market_3];
 
 {
 	_x setVariable ["_funds",nil,true];
