@@ -12,6 +12,7 @@ disabledAI = true;
 disableChannels[]={1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
+LoadScreen  = "images\loading\loading.paa";
 
 class Header
 {
