@@ -7,7 +7,6 @@
 */
 private["_shop"];
 
-_shop = [gs_1];
 
 {
 	_x setVariable ["_funds",nil,true];
