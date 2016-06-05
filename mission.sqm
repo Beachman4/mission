@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3494.3088,196.17491,4649.4663};
-		dir[]={0.26958251,-0.47303379,-0.83894384};
-		up[]={0.14474252,0.880983,-0.45045251};
-		aside[]={-0.95211756,-8.4401108e-007,-0.30594495};
+		pos[]={5095.6875,427.96698,2404.0581};
+		dir[]={0.76717764,-0.39456382,0.50596362};
+		up[]={0.32949048,0.91877854,0.21729597};
+		aside[]={0.5505774,-1.6472768e-007,-0.8348316};
 	};
 };
 binarizationWanted=0;
@@ -49,6 +49,7 @@ addons[]=
 	"A3L_Store",
 	"A3L_savepoint",
 	"A3_Characters_F",
+	"cba_xeh_a3",
 	"Unlocked_Uniforms",
 	"A3_Modules_F",
 	"A3L_HospitalBed",
@@ -131,7 +132,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=64;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -227,248 +228,253 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="cba_xeh_a3";
+			name="cba_xeh_a3";
+		};
+		class Item16
+		{
 			className="Unlocked_Uniforms";
 			name="Unlocked_Uniforms";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3L_HospitalBed";
 			name="A3L_HospitalBed";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 Alpha - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="xCam_EU";
 			name="xCam_EU";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3L_MainBank";
 			name="A3L_MainBank";
 		};
-		class Item21
+		class Item22
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 		};
-		class Item22
+		class Item23
 		{
 			className="mm_bank";
 			name="mm_bank";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3L_Tarmac";
 			name="A3L_Tarmac";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3L_KartIndoor";
 			name="A3L_KartIndoor";
 		};
-		class Item28
+		class Item29
 		{
 			className="mm_showroom";
 			name="mm_showroom";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item30
+		class Item31
 		{
 			className="jerseybarrier";
 			name="jerseybarrier";
 		};
-		class Item31
+		class Item32
 		{
 			className="PoliceStation";
 			name="PoliceStation";
 		};
-		class Item32
+		class Item33
 		{
 			className="dar_ilpdsert";
 			name="dar_ilpdsert";
 		};
-		class Item33
+		class Item34
 		{
 			className="A3L_Prison_Gates";
 			name="A3L_Prison_Gates";
 		};
-		class Item34
+		class Item35
 		{
 			className="DED_Simple_01";
 			name="DED_Simple_01";
 		};
-		class Item35
+		class Item36
 		{
 			className="A3L_PrisonWall";
 			name="A3L_PrisonWall";
 		};
-		class Item36
+		class Item37
 		{
 			className="Gate_C";
 			name="Gate_C";
 		};
-		class Item37
+		class Item38
 		{
 			className="A3_Trees";
 			name="A3_Trees";
 		};
-		class Item38
+		class Item39
 		{
 			className="MBG_Buildings_3";
 			name="MBG_Buildings_3";
 		};
-		class Item39
+		class Item40
 		{
 			className="mm_buildings";
 			name="mm_buildings";
 		};
-		class Item40
+		class Item41
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item41
+		class Item42
 		{
 			className="DED_Taco_01";
 			name="DED_Taco_01";
 		};
-		class Item42
+		class Item43
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item43
+		class Item44
 		{
 			className="CUP_ibr_plants";
 			name="CUP_ibr_plants";
 		};
-		class Item44
+		class Item45
 		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
-		class Item45
+		class Item46
 		{
 			className="DED_Shop_01";
 			name="DED_Shop_01";
 		};
-		class Item46
+		class Item47
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item47
+		class Item48
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item48
+		class Item49
 		{
 			className="rz_dunkinbronuts";
 			name="rz_dunkinbronuts";
 		};
-		class Item49
+		class Item50
 		{
 			className="E76_buildingstower";
 			name="E76_buildingstower";
 		};
-		class Item50
+		class Item51
 		{
 			className="A_BuildingWIP";
 			name="A_BuildingWIP";
 		};
-		class Item51
+		class Item52
 		{
 			className="Jbad_misc_market";
 			name="Jbad_misc_market";
 		};
-		class Item52
+		class Item53
 		{
 			className="Gaol_MapObject";
 			name="Gaol_MapObject";
 		};
-		class Item53
+		class Item54
 		{
 			className="mil";
 			name="mil";
 		};
-		class Item54
+		class Item55
 		{
 			className="A3L_Factory";
 			name="A3L_Factory";
 		};
-		class Item55
+		class Item56
 		{
 			className="DED_Fence_01";
 			name="DED_Fence_01";
 		};
-		class Item56
+		class Item57
 		{
 			className="DED_Ranch_01";
 			name="DED_Ranch_01";
 		};
-		class Item57
+		class Item58
 		{
 			className="A3L_Ford_Raptor";
 			name="A3L_Ford_Raptor";
 		};
-		class Item58
+		class Item59
 		{
 			className="cg_audi_r8_plus";
 			name="cg_audi_r8_plus";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="buildings_misc";
 			name="buildings_misc";
 		};
-		class Item61
+		class Item62
 		{
 			className="HouseA";
 			name="HouseA";
 		};
-		class Item62
+		class Item63
 		{
 			className="HouseStudsDouble";
 			name="HouseStudsDouble";
@@ -767,7 +773,7 @@ class Mission
 			colorName="ColorWhite";
 			angle=0.22146492;
 			id=40;
-			atlOffset=17.611988;
+			atlOffset=21.339497;
 		};
 		class Item24
 		{
@@ -1338,7 +1344,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=1.688634;
 			id=107;
-			atlOffset=83.990982;
+			atlOffset=90.001083;
 		};
 		class Item74
 		{
@@ -5652,6 +5658,7 @@ class Mission
 						angles[]={0,4.8543892,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5660,7 +5667,7 @@ class Mission
 					};
 					id=594;
 					type="C_man_polo_3_F";
-					atlOffset=0.66647243;
+					atlOffset=0.11354542;
 				};
 				class Item3
 				{
@@ -6500,7 +6507,6 @@ class Mission
 						angles[]={6.2826972,0.90190738,0.00059801998};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6508,7 +6514,7 @@ class Mission
 					};
 					id=652;
 					type="C_man_1";
-					atlOffset=0.11082458;
+					atlOffset=1.3323936;
 				};
 				class Item46
 				{
@@ -10921,7 +10927,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
 				name="bank1_2";
 			};
 			id=1753;
@@ -10981,7 +10987,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
 				name="bank1_4";
 			};
 			id=1754;
@@ -11041,8 +11047,8 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
-				name="bank1_1";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
+				name="bank1_3";
 			};
 			id=1755;
 			type="A3L_MoneyPile";
@@ -11101,8 +11107,8 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
-				name="bank1_3";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
+				name="bank1_1";
 			};
 			id=1756;
 			type="A3L_MoneyPile";
@@ -12506,7 +12512,7 @@ class Mission
 					};
 					id=2451;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011730194;
+					atlOffset=0.018551826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12555,7 +12561,7 @@ class Mission
 			{
 			};
 			id=2450;
-			atlOffset=0.00011730194;
+			atlOffset=0.018551826;
 		};
 		class Item506
 		{
@@ -23359,7 +23365,7 @@ class Mission
 			};
 			id=3211;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.14575577;
 		};
 		class Item1113
 		{
@@ -23376,7 +23382,7 @@ class Mission
 			};
 			id=3212;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.14575672;
 		};
 		class Item1114
 		{
@@ -95840,19 +95846,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3602.459,10.29081,3226.51};
+				position[]={3602.459,15.29081,3226.51};
 				angles[]={0,3.2910104,6.2826962};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_2""];";
 				name="bank2_2";
 			};
 			id=13323;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -95901,19 +95906,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3602.697,10.29081,3228.031};
+				position[]={3602.697,15.29081,3228.031};
 				angles[]={0,0.14941764,6.2826962};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_2""];";
 				name="bank2_1";
 			};
 			id=13324;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -96022,19 +96026,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5318.3711,10.29081,2155.469};
+				position[]={5318.3711,18.04081,2155.469};
 				angles[]={0,0.020629792,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
 				name="bank3_1";
 			};
 			id=13335;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
+			atlOffset=1.6403427;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -96083,19 +96086,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5323.4058,10.29081,2152.7241};
+				position[]={5323.4058,18.04081,2152.7241};
 				angles[]={0,0.026127579,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
 				name="bank3_3";
 			};
 			id=13336;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
+			atlOffset=1.6403427;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -96144,19 +96146,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5320.9189,10.29081,2156.6521};
+				position[]={5320.9189,18.97081,2156.6521};
 				angles[]={0,0.018884463,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
 				name="bank3_4";
 			};
 			id=13337;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
+			atlOffset=2.570343;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -96205,19 +96206,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5318.3091,10.29081,2153.9209};
+				position[]={5318.3091,18.04081,2153.9209};
 				angles[]={0,3.1522217,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
 				name="bank3_2";
 			};
 			id=13338;
 			type="A3L_MoneyPile";
-			atlOffset=-5;
+			atlOffset=1.6403427;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -98701,7 +98701,7 @@ class Mission
 			};
 			id=13520;
 			type="Land_Fence2_DED_Fence_02_F";
-			atlOffset=-8.5830688e-006;
+			atlOffset=-9.5367432e-006;
 		};
 		class Item4771
 		{
@@ -98740,7 +98740,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4030.7065,15.933526,4353.4082};
+				position[]={4030.707,14.933526,4353.4082};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
@@ -98750,6 +98750,7 @@ class Mission
 			};
 			id=13523;
 			type="Land_Mailbox_DED_Mailbox_01_F";
+			atlOffset=-1;
 		};
 		class Item4774
 		{
@@ -102372,7 +102373,7 @@ class Mission
 			position[]={3489.2041,15,4640.2656};
 			name="car_g_puff";
 			type="Empty";
-			angle=123.11198;
+			angle=123.11197;
 			id=13717;
 		};
 	};
