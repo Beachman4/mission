@@ -429,6 +429,14 @@ switch (_shop) do
 			["Sheriff_helo", 45000]
 		];
 	};
+	case "med_air_hs":
+	{
+		_return =
+		[
+			["EMS_Chopper",20000],
+			["EMS_Orca",30000]
+		];
+	};
 	case "civ_ship":
 	{
 		_return =

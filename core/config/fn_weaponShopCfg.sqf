@@ -103,7 +103,17 @@ switch(_shop) do
                         };
                 };
         };
-		
+		case "gang":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        default
+                        {
+                                ["Gang Armaments",[["hgun_PDW2000_F",nil,5000],["30Rnd_9x21_Mag",nil,25],["sab_1911_handgun",nil,550],["9Rnd_45ACP_Mag",nil,15],["RH_kimber_nw",nil,550],["RH_7Rnd_45cal_m1911",nil,15],["hgun_mas_uzi_F",nil,1500],["15Rnd_mas_9x21_Mag",nil,15],["hgun_mas_p226_F",nil,500],["15Rnd_mas_9x21_Mag",nil,15],["RH_deagle",nil,750],["RH_7Rnd_50_AE",nil,25]]];
+                        };
+                };
+        };	
         case "rifle":
         {
                 switch(true) do

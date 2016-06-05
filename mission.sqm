@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=13734;
+		nextID=13735;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5275.0596,17.597584,2536.4507};
-		dir[]={0.89474201,-0.30696854,-0.32441664};
-		up[]={0.28859228,0.95171463,-0.10463872};
-		aside[]={-0.34087473,6.2864274e-008,-0.94013059};
+		pos[]={3768.887,40,3053.5962};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4903;
+		items=4904;
 		class Item0
 		{
 			dataType="Marker";
@@ -2857,8 +2857,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3546.1082,15.698973,3229.252};
-				angles[]={0,4.861279,6.2826972};
+				position[]={3546.1079,15.698975,3229.252};
+				angles[]={0,4.8612833,6.2826962};
 			};
 			side="Empty";
 			flags=4;
@@ -2869,7 +2869,6 @@ class Mission
 			};
 			id=409;
 			type="A3L_Savepoint";
-			atlOffset=-1.9073486e-006;
 		};
 		class Item180
 		{
@@ -10366,10 +10365,33 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;    this allowDamage false;    this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];   this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];  this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];  this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]];";
+						init="this enableSimulation false;     " \n "this allowDamage false;     " \n "this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    " \n "this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    " \n "this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   " \n "this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   " \n "this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   " \n "this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   " \n "this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]]; " \n "this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Fetching Vehicles....""];    " \n "life_garage_sp = ""med_car_3"";  }];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=1380;
 					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -102505,6 +102527,15 @@ class Mission
 			type="A3L_House_Green_Icon";
 			colorName="ColorBlue";
 			id=13733;
+		};
+		class Item4903
+		{
+			dataType="Marker";
+			position[]={3761.5583,15,3107.8691};
+			name="med_air_hs";
+			type="Empty";
+			angle=19.306999;
+			id=13734;
 		};
 	};
 };
