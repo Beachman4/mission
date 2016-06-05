@@ -8,18 +8,18 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=13729;
+		nextID=13734;
 	};
 	class MarkerIDProvider
 	{
-		nextID=281;
+		nextID=282;
 	};
 	class Camera
 	{
-		pos[]={3494.3088,196.17491,4649.4663};
-		dir[]={0.26958251,-0.47303379,-0.83894384};
-		up[]={0.14474252,0.880983,-0.45045251};
-		aside[]={-0.95211756,-8.4401108e-007,-0.30594495};
+		pos[]={5275.0596,17.597584,2536.4507};
+		dir[]={0.89474201,-0.30696854,-0.32441664};
+		up[]={0.28859228,0.95171463,-0.10463872};
+		aside[]={-0.34087473,6.2864274e-008,-0.94013059};
 	};
 };
 binarizationWanted=0;
@@ -49,6 +49,7 @@ addons[]=
 	"A3L_Store",
 	"A3L_savepoint",
 	"A3_Characters_F",
+	"cba_xeh_a3",
 	"Unlocked_Uniforms",
 	"A3_Modules_F",
 	"A3L_HospitalBed",
@@ -131,7 +132,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=64;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -227,248 +228,253 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="cba_xeh_a3";
+			name="cba_xeh_a3";
+		};
+		class Item16
+		{
 			className="Unlocked_Uniforms";
 			name="Unlocked_Uniforms";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3L_HospitalBed";
 			name="A3L_HospitalBed";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 Alpha - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="xCam_EU";
 			name="xCam_EU";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3L_MainBank";
 			name="A3L_MainBank";
 		};
-		class Item21
+		class Item22
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 		};
-		class Item22
+		class Item23
 		{
 			className="mm_bank";
 			name="mm_bank";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3L_Tarmac";
 			name="A3L_Tarmac";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3L_KartIndoor";
 			name="A3L_KartIndoor";
 		};
-		class Item28
+		class Item29
 		{
 			className="mm_showroom";
 			name="mm_showroom";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item30
+		class Item31
 		{
 			className="jerseybarrier";
 			name="jerseybarrier";
 		};
-		class Item31
+		class Item32
 		{
 			className="PoliceStation";
 			name="PoliceStation";
 		};
-		class Item32
+		class Item33
 		{
 			className="dar_ilpdsert";
 			name="dar_ilpdsert";
 		};
-		class Item33
+		class Item34
 		{
 			className="A3L_Prison_Gates";
 			name="A3L_Prison_Gates";
 		};
-		class Item34
+		class Item35
 		{
 			className="DED_Simple_01";
 			name="DED_Simple_01";
 		};
-		class Item35
+		class Item36
 		{
 			className="A3L_PrisonWall";
 			name="A3L_PrisonWall";
 		};
-		class Item36
+		class Item37
 		{
 			className="Gate_C";
 			name="Gate_C";
 		};
-		class Item37
+		class Item38
 		{
 			className="A3_Trees";
 			name="A3_Trees";
 		};
-		class Item38
+		class Item39
 		{
 			className="MBG_Buildings_3";
 			name="MBG_Buildings_3";
 		};
-		class Item39
+		class Item40
 		{
 			className="mm_buildings";
 			name="mm_buildings";
 		};
-		class Item40
+		class Item41
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item41
+		class Item42
 		{
 			className="DED_Taco_01";
 			name="DED_Taco_01";
 		};
-		class Item42
+		class Item43
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item43
+		class Item44
 		{
 			className="CUP_ibr_plants";
 			name="CUP_ibr_plants";
 		};
-		class Item44
+		class Item45
 		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
-		class Item45
+		class Item46
 		{
 			className="DED_Shop_01";
 			name="DED_Shop_01";
 		};
-		class Item46
+		class Item47
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item47
+		class Item48
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item48
+		class Item49
 		{
 			className="rz_dunkinbronuts";
 			name="rz_dunkinbronuts";
 		};
-		class Item49
+		class Item50
 		{
 			className="E76_buildingstower";
 			name="E76_buildingstower";
 		};
-		class Item50
+		class Item51
 		{
 			className="A_BuildingWIP";
 			name="A_BuildingWIP";
 		};
-		class Item51
+		class Item52
 		{
 			className="Jbad_misc_market";
 			name="Jbad_misc_market";
 		};
-		class Item52
+		class Item53
 		{
 			className="Gaol_MapObject";
 			name="Gaol_MapObject";
 		};
-		class Item53
+		class Item54
 		{
 			className="mil";
 			name="mil";
 		};
-		class Item54
+		class Item55
 		{
 			className="A3L_Factory";
 			name="A3L_Factory";
 		};
-		class Item55
+		class Item56
 		{
 			className="DED_Fence_01";
 			name="DED_Fence_01";
 		};
-		class Item56
+		class Item57
 		{
 			className="DED_Ranch_01";
 			name="DED_Ranch_01";
 		};
-		class Item57
+		class Item58
 		{
 			className="A3L_Ford_Raptor";
 			name="A3L_Ford_Raptor";
 		};
-		class Item58
+		class Item59
 		{
 			className="cg_audi_r8_plus";
 			name="cg_audi_r8_plus";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="buildings_misc";
 			name="buildings_misc";
 		};
-		class Item61
+		class Item62
 		{
 			className="HouseA";
 			name="HouseA";
 		};
-		class Item62
+		class Item63
 		{
 			className="HouseStudsDouble";
 			name="HouseStudsDouble";
@@ -506,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4901;
+		items=4903;
 		class Item0
 		{
 			dataType="Marker";
@@ -39928,7 +39934,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5269.5967,15.000498,2584.8716};
+				position[]={5270.5591,15.000493,2577.8152};
 				angles[]={0,4.7506461,0};
 			};
 			side="Empty";
@@ -39938,6 +39944,7 @@ class Mission
 			};
 			id=10687;
 			type="A3L_Tarmac";
+			atlOffset=-4.7683716e-006;
 		};
 		class Item2051
 		{
@@ -98701,7 +98708,7 @@ class Mission
 			};
 			id=13520;
 			type="Land_Fence2_DED_Fence_02_F";
-			atlOffset=-8.5830688e-006;
+			atlOffset=-9.5367432e-006;
 		};
 		class Item4771
 		{
@@ -102372,8 +102379,132 @@ class Mission
 			position[]={3489.2041,15,4640.2656};
 			name="car_g_puff";
 			type="Empty";
-			angle=123.11198;
+			angle=123.11197;
 			id=13717;
+		};
+		class Item4901
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5275.0249,15.048439,2539.7471};
+						angles[]={0,3.1414881,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this enableSimulation false; this allowDamage false; this addAction[""Truck Shop"",life_fnc_vehicleShopMenu,[""civ_tow"",civilian,""civ_car_5"",""civ"",""Tow Truck Shop""]];";
+						isPlayer=1;
+					};
+					id=13732;
+					type="C_man_p_shorts_1_F_afro";
+					atlOffset=0.0033664703;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=13731;
+			atlOffset=0.0033664703;
+		};
+		class Item4902
+		{
+			dataType="Marker";
+			position[]={5275.0391,15,2539.916};
+			name="tow_shop";
+			text="Tow Shop";
+			type="A3L_House_Green_Icon";
+			colorName="ColorBlue";
+			id=13733;
 		};
 	};
 };

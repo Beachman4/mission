@@ -290,6 +290,14 @@ switch (_shop) do
 			["Jonzie_Tanker_Truck",60000]
 		];
 	};
+	case "civ_tow":
+	{
+		_return =
+		[
+			["A3L_Towtruck",45000],
+			["Jonzie_Tow_Truck",30000]
+		]
+	};
     case "reb_car":
 	{
 		_return =
