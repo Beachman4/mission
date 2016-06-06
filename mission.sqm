@@ -8,18 +8,18 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=14281;
+		nextID=14284;
 	};
 	class MarkerIDProvider
 	{
-		nextID=282;
+		nextID=283;
 	};
 	class Camera
 	{
-		pos[]={3277.5107,58.54155,4012.3618};
-		dir[]={-0.33841357,-0.71974999,-0.60619116};
-		up[]={-0.35084212,0.69422561,-0.62845486};
-		aside[]={-0.87316626,2.1839514e-007,0.48745584};
+		pos[]={3560.7109,18.899734,3192.9087};
+		dir[]={0.94528508,-0.26755318,-0.18672262};
+		up[]={0.26248252,0.9635424,-0.051848456};
+		aside[]={-0.19378729,-2.0023435e-008,-0.98105061};
 	};
 };
 binarizationWanted=0;
@@ -512,7 +512,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5267;
+		items=5269;
 		class Item0
 		{
 			dataType="Marker";
@@ -773,7 +773,7 @@ class Mission
 			colorName="ColorWhite";
 			angle=0.22146492;
 			id=40;
-			atlOffset=17.611988;
+			atlOffset=21.339497;
 		};
 		class Item24
 		{
@@ -1262,7 +1262,7 @@ class Mission
 			text="Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
-			angle=358.25793;
+			angle=358.2579;
 			id=96;
 			atlOffset=81.918617;
 		};
@@ -1344,7 +1344,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=1.688634;
 			id=107;
-			atlOffset=83.990982;
+			atlOffset=90.001083;
 		};
 		class Item74
 		{
@@ -5658,6 +5658,7 @@ class Mission
 						angles[]={0,4.8543892,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5666,7 +5667,7 @@ class Mission
 					};
 					id=594;
 					type="C_man_polo_3_F";
-					atlOffset=0.66647243;
+					atlOffset=0.11354542;
 				};
 				class Item3
 				{
@@ -6553,7 +6554,6 @@ class Mission
 						angles[]={6.2826972,0.90190738,0.00059801998};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6561,7 +6561,7 @@ class Mission
 					};
 					id=652;
 					type="C_man_1";
-					atlOffset=0.11082458;
+					atlOffset=1.3323936;
 				};
 				class Item46
 				{
@@ -12571,7 +12571,7 @@ class Mission
 					};
 					id=2451;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011730194;
+					atlOffset=0.018551826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12620,7 +12620,7 @@ class Mission
 			{
 			};
 			id=2450;
-			atlOffset=0.00011730194;
+			atlOffset=0.018551826;
 		};
 		class Item505
 		{
@@ -23424,7 +23424,7 @@ class Mission
 			};
 			id=3211;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.14575577;
 		};
 		class Item1112
 		{
@@ -23441,7 +23441,7 @@ class Mission
 			};
 			id=3212;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.14575672;
 		};
 		class Item1113
 		{
@@ -108621,7 +108621,7 @@ class Mission
 			position[]={3264.0781,15.523353,3983.8848};
 			name="car_g_r5";
 			type="Empty";
-			angle=270.43796;
+			angle=270.43793;
 			id=14279;
 			atlOffset=0.52335262;
 		};
@@ -108642,6 +108642,72 @@ class Mission
 			};
 			id=14278;
 			type="A3L_Savepoint";
+		};
+		class Item5267
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3589.9231,15.103439,3184.314};
+						angles[]={0,4.7888689,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false; this enableSimulation false; this addHeadgear ""AM_Batman"";this addAction[""Clothing Store"",life_fnc_clothingMenu,""mask""];";
+					};
+					id=14282;
+					type="C_man_1";
+					atlOffset=0.10200024;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14281;
+			atlOffset=0.10200024;
+		};
+		class Item5268
+		{
+			dataType="Marker";
+			position[]={3589.696,15,3182.7603};
+			name="marker_282";
+			text="Rick's Masks";
+			type="A3L_Store_Red_Icon";
+			colorName="ColorOrange";
+			id=14283;
 		};
 	};
 };
