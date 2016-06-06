@@ -16,10 +16,17 @@ class EditorData
 	};
 	class Camera
 	{
+<<<<<<< HEAD
 		pos[]={3560.7109,18.899734,3192.9087};
 		dir[]={0.94528508,-0.26755318,-0.18672262};
 		up[]={0.26248252,0.9635424,-0.051848456};
 		aside[]={-0.19378729,-2.0023435e-008,-0.98105061};
+=======
+		pos[]={5306.2568,133.97299,2151.7358};
+		dir[]={-0.15796301,-0.41778967,0.89483052};
+		up[]={-0.072647676,0.90848976,0.4115468};
+		aside[]={0.98488301,-1.0226795e-006,0.17385826};
+>>>>>>> origin/master
 	};
 };
 binarizationWanted=0;
@@ -10987,7 +10994,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
-				name="bank1_2";
+				name="stash3";
 			};
 			id=1753;
 			type="A3L_MoneyPile";
@@ -11047,7 +11054,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
-				name="bank1_4";
+				name="stash1";
 			};
 			id=1754;
 			type="A3L_MoneyPile";
@@ -11107,7 +11114,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
-				name="bank1_3";
+				name="stash4";
 			};
 			id=1755;
 			type="A3L_MoneyPile";
@@ -11167,7 +11174,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_1""];";
-				name="bank1_1";
+				name="stash2";
 			};
 			id=1756;
 			type="A3L_MoneyPile";
@@ -13242,20 +13249,34 @@ class Mission
 		class Item525
 		{
 			dataType="Marker";
+<<<<<<< HEAD
 			position[]={4317.4482,15.000008,4201.2231};
 			name="Respawn_west";
 			type="Empty";
 			angle=179.15891;
+=======
+			position[]={3068.1235,15,3893.0549};
+			name="Respawn_west";
+			type="Empty";
+			angle=236.95886;
+>>>>>>> origin/master
 			id=2579;
 			atlOffset=7.6293945e-006;
 		};
 		class Item526
 		{
 			dataType="Marker";
+<<<<<<< HEAD
 			position[]={4317.4175,15.000008,4201.9907};
 			name="cop_spawn_1";
 			type="Empty";
 			angle=178.22377;
+=======
+			position[]={3068.7566,15,3893.49};
+			name="cop_spawn_1";
+			type="Empty";
+			angle=236.02373;
+>>>>>>> origin/master
 			id=2580;
 			atlOffset=7.6293945e-006;
 		};
@@ -13265,19 +13286,32 @@ class Mission
 			position[]={4288.3384,15.00142,4173.1289};
 			name="cop_car_1";
 			type="Empty";
+<<<<<<< HEAD
 			angle=88.016548;
+=======
+			angle=55.891911;
+>>>>>>> origin/master
 			id=2581;
 			atlOffset=4.7683716e-006;
 		};
 		class Item528
 		{
 			dataType="Marker";
+<<<<<<< HEAD
 			position[]={4317.251,59.174355,4195.1108};
 			name="respawn_west_1";
 			type="Empty";
 			angle=177.62651;
 			id=2582;
 			atlOffset=44.174355;
+=======
+			position[]={3062.8464,59.174103,3889.9646};
+			name="respawn_west_1";
+			type="Empty";
+			angle=235.4265;
+			id=2582;
+			atlOffset=44.174103;
+>>>>>>> origin/master
 		};
 		class Item529
 		{
@@ -13413,17 +13447,28 @@ class Mission
 			position[]={4288.9424,15.001009,4180.7432};
 			name="cop_car_2";
 			type="Empty";
+<<<<<<< HEAD
 			angle=88.884521;
+=======
+			angle=56.759892;
+>>>>>>> origin/master
 			id=2589;
 			atlOffset=0.0010089874;
 		};
 		class Item534
 		{
 			dataType="Marker";
+<<<<<<< HEAD
 			position[]={4317.415,15.000008,4198.0625};
 			name="cop_spawn_2";
 			type="Empty";
 			angle=266.80795;
+=======
+			position[]={3065.4312,15,3891.3987};
+			name="cop_spawn_2";
+			type="Empty";
+			angle=324.60794;
+>>>>>>> origin/master
 			id=2590;
 			atlOffset=7.6293945e-006;
 		};
@@ -13433,7 +13478,11 @@ class Mission
 			position[]={4275.4116,15.00142,4202.9233};
 			name="det_car_1";
 			type="Empty";
+<<<<<<< HEAD
 			angle=356.00101;
+=======
+			angle=323.87628;
+>>>>>>> origin/master
 			id=2591;
 			atlOffset=0.00023460388;
 		};
@@ -17483,7 +17532,11 @@ class Mission
 			position[]={4345.8369,15.009315,4207.5479};
 			name="sert_car_1";
 			type="Empty";
+<<<<<<< HEAD
 			angle=77.253181;
+=======
+			angle=45.128551;
+>>>>>>> origin/master
 			id=2822;
 			atlOffset=0.009314537;
 		};
@@ -95914,7 +95967,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_2""];";
-				name="bank2_2";
+				name="stash5";
 			};
 			id=13323;
 			type="A3L_MoneyPile";
@@ -95974,7 +96027,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_2""];";
-				name="bank2_1";
+				name="stash6";
 			};
 			id=13324;
 			type="A3L_MoneyPile";
@@ -96093,7 +96146,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
-				name="bank3_1";
+				name="stash9";
 			};
 			id=13335;
 			type="A3L_MoneyPile";
@@ -96153,7 +96206,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
-				name="bank3_3";
+				name="stash7";
 			};
 			id=13336;
 			type="A3L_MoneyPile";
@@ -96213,7 +96266,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
-				name="bank3_4";
+				name="stash8";
 			};
 			id=13337;
 			type="A3L_MoneyPile";
@@ -96273,7 +96326,7 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];this setVariable [""bank"", ""bank_3""];";
-				name="bank3_2";
+				name="stash10";
 			};
 			id=13338;
 			type="A3L_MoneyPile";
