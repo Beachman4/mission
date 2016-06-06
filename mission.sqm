@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5306.2568,133.97299,2151.7358};
-		dir[]={-0.15796301,-0.41778967,0.89483052};
-		up[]={-0.072647676,0.90848976,0.4115468};
-		aside[]={0.98488301,-1.0226795e-006,0.17385826};
+		pos[]={3178.0884,151.8004,3793.0698};
+		dir[]={-0.50117636,-0.7777279,0.3797203};
+		up[]={-0.61992234,0.62856239,0.46969169};
+		aside[]={0.60396826,-7.1547402e-007,0.79715109};
 	};
 };
 binarizationWanted=0;
@@ -13243,7 +13243,7 @@ class Mission
 			position[]={3068.1235,15,3893.0549};
 			name="Respawn_west";
 			type="Empty";
-			angle=236.95886;
+			angle=236.95883;
 			id=2579;
 		};
 		class Item526
@@ -13252,7 +13252,7 @@ class Mission
 			position[]={3068.7566,15,3893.49};
 			name="cop_spawn_1";
 			type="Empty";
-			angle=236.02373;
+			angle=236.0237;
 			id=2580;
 		};
 		class Item527
@@ -13261,7 +13261,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891911;
+			angle=55.891907;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13271,7 +13271,7 @@ class Mission
 			position[]={3062.8464,59.174103,3889.9646};
 			name="respawn_west_1";
 			type="Empty";
-			angle=235.4265;
+			angle=235.42647;
 			id=2582;
 			atlOffset=44.174103;
 		};
@@ -13407,7 +13407,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759892;
+			angle=56.759888;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -13417,7 +13417,7 @@ class Mission
 			position[]={3065.4312,15,3891.3987};
 			name="cop_spawn_2";
 			type="Empty";
-			angle=324.60794;
+			angle=324.60791;
 			id=2590;
 		};
 		class Item535
@@ -107980,6 +107980,7 @@ class Mission
 					class Attributes
 					{
 						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_tow"",civilian,""civ_car_5"",""civ"",""Tow Shop""]];  " \n "this setVariable[""realname"", ""Tow Shop""];";
+						isPlayer=1;
 					};
 					id=14256;
 					type="C_man_p_beggar_F";
