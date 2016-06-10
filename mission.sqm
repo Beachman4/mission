@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=14293;
+		nextID=14297;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3178.0884,151.8004,3793.0698};
-		dir[]={-0.50117636,-0.7777279,0.3797203};
-		up[]={-0.61992234,0.62856239,0.46969169};
-		aside[]={0.60396826,-7.1547402e-007,0.79715109};
+		pos[]={3820.7026,21.140051,3014.5527};
+		dir[]={-0.078844547,-0.79216939,-0.60519195};
+		up[]={-0.10233933,0.61029863,-0.78553367};
+		aside[]={-0.99162292,-1.28377e-007,0.12918916};
 	};
 };
 binarizationWanted=0;
@@ -511,7 +511,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5270;
+		items=5271;
 		class Item0
 		{
 			dataType="Marker";
@@ -13243,7 +13243,7 @@ class Mission
 			position[]={3068.1235,15,3893.0549};
 			name="Respawn_west";
 			type="Empty";
-			angle=236.95883;
+			angle=236.95882;
 			id=2579;
 		};
 		class Item526
@@ -13252,7 +13252,7 @@ class Mission
 			position[]={3068.7566,15,3893.49};
 			name="cop_spawn_1";
 			type="Empty";
-			angle=236.0237;
+			angle=236.02368;
 			id=2580;
 		};
 		class Item527
@@ -13261,7 +13261,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891907;
+			angle=55.891899;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13271,7 +13271,7 @@ class Mission
 			position[]={3062.8464,59.174103,3889.9646};
 			name="respawn_west_1";
 			type="Empty";
-			angle=235.42647;
+			angle=235.42642;
 			id=2582;
 			atlOffset=44.174103;
 		};
@@ -13407,7 +13407,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759888;
+			angle=56.75988;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -13417,7 +13417,7 @@ class Mission
 			position[]={3065.4312,15,3891.3987};
 			name="cop_spawn_2";
 			type="Empty";
-			angle=324.60791;
+			angle=324.60785;
 			id=2590;
 		};
 		class Item535
@@ -108551,6 +108551,60 @@ class Mission
 			id=14290;
 			type="xcam_city_W10_L11";
 			atlOffset=0.00062465668;
+		};
+		class Item5270
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3820.5979,15.001439,3011.127};
+						angles[]={0,0.17833775,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this allowDamage false; this enableSimulation false; this addAction[""DAI Clothing Store"",life_fnc_clothingMenu,""dai""];this addAction[""DAI Weapon Shop"",life_fnc_weaponShopMenu,""dai_shop""]; ";
+					};
+					id=14296;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=14295;
 		};
 	};
 };
