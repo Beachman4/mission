@@ -186,7 +186,7 @@ life_licenses =
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
 	["license_civ_home","civ"],
-	
+	["license_civ_dai", "civ"],
 	["license_civ_rifle","civ"]
 ];
 {missionNamespace setVariable[(_x select 0),false];} foreach life_licenses;
