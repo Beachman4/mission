@@ -68,7 +68,18 @@ _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkers
 _markername="town_2";
 _terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects; 
-
+_markername="ganghideout3";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects;
+_markername="ganghideout1_1";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects;
+_markername="ganghideout1_2";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects;
+_markername="ganghideout1_3";
+_terrainobjects=nearestTerrainObjects [(getMarkerPos _markername),[],(getmarkersize _markername)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects;
 while {true} do
 {
     {
