@@ -13,10 +13,21 @@ class Socket_Reciever
 	};
 };
 
+class Yoda
+{
+	tag = "yoda";
+
+	class functions {
+		file = "yoda";
+
+		class jailCheck {};
+	};
+};
+
 class FFG_Client_Core
 {
     tag = "ffg";
-    
+
     class K9
     {
         file = "FFG\k9";
@@ -56,14 +67,14 @@ class FFG_Client_Core
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
 		class setupActions {};
 		class setupEVH {};
 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -80,7 +91,7 @@ class Life_Client_Core
         class emtmarkers {};
         class pulloutdead {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -118,7 +129,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -135,7 +146,7 @@ class Life_Client_Core
 		class copHouseOwner {};
 		class lockHouse {};
 	};
-	
+
 	class Drugs
 	{
 		file = "core\drugs";
@@ -164,7 +175,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		
+
 		//Clothing Store Configs
 		class clothing_ems {};
 		class clothing_bruce {};
@@ -175,7 +186,7 @@ class Life_Client_Core
         class clothing_sertclothing {};
 		class clothing_detectiveclothing{};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";
@@ -231,7 +242,7 @@ class Life_Client_Core
 		class settingsMenu {};
 		class settingsInit {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -279,7 +290,7 @@ class Life_Client_Core
 		class enablecollisionwith {};
   		class disablecollisionwith {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -294,7 +305,7 @@ class Life_Client_Core
 		class setTexture {};
 		class say3D {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -312,7 +323,7 @@ class Life_Client_Core
 		class civLoadout {};
 		class freezePlayer {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -329,7 +340,7 @@ class Life_Client_Core
 		class addVehicle2Chain {};
         class updateVehTrunk {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -353,15 +364,15 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
-		class testIntox {};	
+		class testIntox {};
 		class testIntoxClient {};
 		class intoxTestReturn {};
 		class fastRope {};
-		class removeWeaponAction {};		
+		class removeWeaponAction {};
 		class removeWeapons {};
 
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -378,7 +389,7 @@ class Life_Client_Core
 		class gangDisband {};
 		class gangDisbanded {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -402,7 +413,7 @@ class Life_Client_Core
 		class chopShopSelection {};
 		class chopShopSell {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -423,7 +434,7 @@ class Life_Client_Core
 		class RoadConeB {};
 		class RoadConeStripB {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";

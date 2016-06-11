@@ -32,12 +32,12 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel,0);
 		life_blacklisted = _this select 9;
 	};
-	
+
 	case civilian: {
 		life_is_arrested = _this select 7;
 		life_arrestMinutes = _this select 9;
 		life_arrestReason = _this select 10;
-		
+
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		life_houses = _this select 11;
@@ -45,15 +45,18 @@ switch(playerSide) do {
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles set[count life_vehicles,_house];
 		} foreach life_houses;
-		
+
 		life_gangData = _This select 12;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
 		[] spawn life_fnc_initHouses;
+		if (life_arrestMinutes > 0) then {
+			[] call yoda_fnc_jailCheck;
+		};
 	};
-	
-	
+
+
 	case independent: {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_copLevel,0);

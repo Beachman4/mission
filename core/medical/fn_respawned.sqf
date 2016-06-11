@@ -1,7 +1,7 @@
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Sets the player up if he/she used the respawn option.
 */
@@ -43,7 +43,7 @@ if(!isNull life_corpse) then {
 	life_corpse setVariable["Revive",TRUE,TRUE];
 	_containers = nearestObjects[life_corpse,["WeaponHolderSimulated"],5];
 	{deleteVehicle _x;} foreach _containers; //Delete the containers.
-	hideBody life_corpse;
+	deleteVehicle life_corpse;
 };
 
 //Destroy our camera...
