@@ -2,7 +2,7 @@
 /*
 	File: fn_adminCompensate.sqf
 	Author: ColinM9991
-	
+
 	Description:
 	Figure it out.
 */
@@ -10,7 +10,7 @@ private["_value","_action"];
 if(FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 _value = parseNumber(ctrlText 9922);
 _reason = ctrlText 9923;
-if (FETCH_CONST(life_adminlevel) < 4) then {
+if (FETCH_CONST(life_adminlevel) == 3) then {
     if (_value > 50000) exitWith {
         hint "You can't give out that much!";
     };
