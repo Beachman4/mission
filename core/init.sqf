@@ -12,7 +12,6 @@ A3L_RunCode = compileFinal "
 [] execVM "A3L_Stuff\jailsystem.sqf";
 [] execVM "A3L_Stuff\bank.sqf";
 [] execVM "A3L_Stuff\hunting.sqf";
-[] execVM "FFG\robbery\fn_robShopInit.sqf";
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
@@ -39,7 +38,7 @@ switch (playerSide) do
 			["NotWhitelisted",false,true] call BIS_fnc_endMission;
 			sleep 35;
 		};
-        tf_no_auto_long_range_radio = false; 
+        tf_no_auto_long_range_radio = false;
         waitUntil {!(isNull (findDisplay 46))};
         [] call life_fnc_spawnMenu;
         waitUntil{!isNull (findDisplay 38500)};
@@ -63,7 +62,7 @@ switch (playerSide) do
 			["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
 			sleep 35;
 		};
-        tf_no_auto_long_range_radio = false; 
+        tf_no_auto_long_range_radio = false;
         waitUntil {!(isNull (findDisplay 46))};
         [] call life_fnc_spawnMenu;
         waitUntil{!isNull (findDisplay 38500)};
