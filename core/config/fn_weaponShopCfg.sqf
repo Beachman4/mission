@@ -134,7 +134,7 @@ switch(_shop) do
 		case "gas":
 		{
 				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750]]];
-		}
+		};
 		case "dai_shop":
         {
                 switch(true) do

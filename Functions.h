@@ -56,12 +56,6 @@ class FFG_Client_Core
         class hudSetup {};
         class hud {};
     };
-	class robbery
-	{
-		file = "FFG\robbery";
-		class robShops {};
-		class robShopReset {};
-	};
 };
 
 class Life_Client_Core
@@ -90,6 +84,12 @@ class Life_Client_Core
 		class medicLoadout {};
         class emtmarkers {};
         class pulloutdead {};
+	};
+
+	class Robbery
+	{
+		file = "FFG\robbery";
+		class robShops {};
 	};
 
 	class Actions
