@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Buys the house?
 */
@@ -19,7 +19,10 @@ closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {};
-if(life_atmcash < (_houseCfg select 0)) exitWith {hint localize "You require " & _houseCfg & " in your bank to buy this house"};
+//This broke shit.
+//if(life_atmcash < (_houseCfg select 0)) exitWith {hint localize "You require " & _houseCfg & " in your bank to buy this house"};
+if(life_atmcash < (_houseCfg select 0)) exitWith {hint localize "STR_House_NotEnough"};
+
 
 _action = [
 	format[localize "STR_House_BuyMSG",

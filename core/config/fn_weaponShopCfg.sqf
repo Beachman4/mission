@@ -2,7 +2,7 @@
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0};
- 
+
 switch(_shop) do
 {
         case "med_supplies":
@@ -40,12 +40,12 @@ switch(_shop) do
                         };
                 };
         };
-	
-		
+
+
         case "cop_basic":
         {
                 switch(true) do
-                {		
+                {
 						case (playerSide != west): {"You are not a police officer"};
                         default
                         {
@@ -73,12 +73,12 @@ switch(_shop) do
                 case (__GETC__(life_coplevel) < 2): {hint "You are not high enough cop level."; closeDialog 0;};
                 default
                 {
-                    ["Sert Weapon Shop", [["RH_M4m_b", "M4A1 Magpul Black", 10],["RH_fa556", nil, 10],["FHQ_acc_ANPEQ15_black", nil, 10],["RH_compm4s", nil, 10],["RH_30Rnd_556x45_M855A1",nil,10],["optic_mas_Arco_blk", nil,10],["optic_mas_acog_eo", nil, 10],["acc_pointer_IR", nil,10],["srifle_mas_m110", "M110 Rifle",10],["FHQ_optic_TWS3050", nil, 10],["muzzle_mas_snds_SH", nil,10],["RH_SFM952V", nil,10],["optic_LRPS",nil,10],["optic_LRPS",nil,10],["20Rnd_mas_762x51_Stanag",nil,10]]];  
+                    ["Sert Weapon Shop", [["RH_M4m_b", "M4A1 Magpul Black", 10],["RH_fa556", nil, 10],["FHQ_acc_ANPEQ15_black", nil, 10],["RH_compm4s", nil, 10],["RH_30Rnd_556x45_M855A1",nil,10],["optic_mas_Arco_blk", nil,10],["optic_mas_acog_eo", nil, 10],["acc_pointer_IR", nil,10],["srifle_mas_m110", "M110 Rifle",10],["FHQ_optic_TWS3050", nil, 10],["muzzle_mas_snds_SH", nil,10],["RH_SFM952V", nil,10],["optic_LRPS",nil,10],["optic_LRPS",nil,10],["20Rnd_mas_762x51_Stanag",nil,10]]];
                 };
             };
         };
 
-      
+
         case "rebel":
         {
                 switch(true) do
@@ -90,7 +90,7 @@ switch(_shop) do
                         };
                 };
         };
-       
+
         case "gun":
         {
                 switch(true) do
@@ -113,7 +113,7 @@ switch(_shop) do
                                 ["Gang Armaments",[["hgun_PDW2000_F",nil,5000],["30Rnd_9x21_Mag",nil,25],["sab_1911_handgun",nil,550],["9Rnd_45ACP_Mag",nil,15],["RH_kimber_nw",nil,550],["RH_7Rnd_45cal_m1911",nil,15],["hgun_mas_uzi_F",nil,1500],["15Rnd_mas_9x21_Mag",nil,15],["hgun_mas_p226_F",nil,500],["15Rnd_mas_9x21_Mag",nil,15],["RH_deagle",nil,750],["RH_7Rnd_50_AE",nil,25]]];
                         };
                 };
-        };	
+        };
         case "rifle":
         {
                 switch(true) do
@@ -125,15 +125,15 @@ switch(_shop) do
                                 ["Rifle Shop",[["arifle_mas_lee",nil,5500],["5Rnd_mas_762x51_Stanag",nil,16]]];
                         };
                 };
-        };		
-             
+        };
+
         case "genstore":
         {
                 ["General Store",[["ItemMap",nil,60],["FirstAidKit",nil,250],["itemRadio",nil,900],["tf_anprc155","Long Range Radio",2500],["Binocular",nil,1250],["ItemGPS",nil,750],["ToolKit",nil,500],["NVGoggles_OPFOR",nil,5000],["NVGoggles",nil,5000]]];
         };
 		case "gas":
 		{
-				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750]];
+				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750]]];
 		}
 		case "dai_shop":
         {
