@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5913.7622,128.34319,3352.9094};
-		dir[]={-0.41025373,-0.64785242,-0.64204669};
-		up[]={-0.3488985,0.76163304,-0.54602325};
-		aside[]={-0.8427394,-1.9173895e-006,0.53848869};
+		pos[]={5371.3091,57.979225,4356.1748};
+		dir[]={0.15284736,-0.69436204,0.70338213};
+		up[]={0.14746962,0.719495,0.67862779};
+		aside[]={0.97728223,-2.0789448e-006,-0.21236415};
 	};
 };
 binarizationWanted=0;
@@ -540,7 +540,7 @@ class Mission
 			type="Empty";
 			angle=1.1873838;
 			id=5;
-			atlOffset=0.00085449219;
+			atlOffset=0.00084877014;
 		};
 		class Item3
 		{
@@ -10472,6 +10472,7 @@ class Mission
 			class Attributes
 			{
 				init="this setpos [(getpos this select 0), (getpos this select 1), -0.95] ; this setVectorUp [0,0,1]";
+				name="bank";
 			};
 			id=1661;
 			type="Land_CommonwealthBank";
@@ -12298,7 +12299,7 @@ class Mission
 					};
 					id=2451;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011730194;
+					atlOffset=0.030774117;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12347,7 +12348,7 @@ class Mission
 			{
 			};
 			id=2450;
-			atlOffset=0.00011730194;
+			atlOffset=0.030774117;
 		};
 		class Item491
 		{
@@ -12988,7 +12989,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891872;
+			angle=55.891869;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13134,7 +13135,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759853;
+			angle=56.75985;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -22916,7 +22917,7 @@ class Mission
 			};
 			id=3211;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.15608406;
 		};
 		class Item1097
 		{
@@ -22933,7 +22934,7 @@ class Mission
 			};
 			id=3212;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.15608406;
 		};
 		class Item1098
 		{
