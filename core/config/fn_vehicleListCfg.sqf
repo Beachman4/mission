@@ -45,6 +45,8 @@ switch (_shop) do
 			["A3L_VolvoS60Rred",50000],
             ["Nissan_GTR_Black",100000],
             ["Nissan_GTR_Red",100000],
+			["A3L_Subaru_WRX_DarkBlue",100000],
+            ["A3L_Subaru_WRX_Grey",100000],
             ["Nissan_GTR_White",100000]
         ];
     };
@@ -260,8 +262,6 @@ switch (_shop) do
 			["S_Rangerover_Orange",65000],
 			["S_Rangerover_White",65000],
             ["Jonzie_STI",20000],
-            ["A3L_Subaru_WRX_DarkBlue",20000],
-            ["A3L_Subaru_WRX_Grey",20000],
             ["A3L_Touareg_Red",30000],
             ["A3L_Smartcar_Red",5000],
 			["A3L_GMC_Van_White",25000],
