@@ -10128,7 +10128,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;     " \n "this allowDamage false;     " \n "this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    " \n "this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    " \n "this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   " \n "this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   " \n "this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   " \n "this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   " \n "this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]]; " \n "this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    " \n "createDialog ""Life_impound_menu"";    " \n "disableSerialization;    " \n "ctrlSetText[2802,""Fetching Vehicles....""];    " \n "life_garage_sp = ""med_car_3"";  }];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false;     this allowDamage false;     this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]]; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    createDialog ""Life_impound_menu"";    disableSerialization;    ctrlSetText[2802,""Fetching Vehicles....""];    life_garage_sp = ""med_car_3"";  }];   this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=1380;
 					type="B_RangeMaster_F";
@@ -11900,7 +11900,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Kart Shop"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,[""kart_spawn_1"",""kart_spawn_2"",""kart_spawn_3"",""kart_spawn_4""],""civ"",""Kart Shop""]]; " \n "this addAction[""Kart Clothing Shop"",life_fnc_clothingMenu,""kart""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Kart Shop"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,[""kart_spawn_1"",""kart_spawn_2"",""kart_spawn_3"",""kart_spawn_4""],""civ"",""Kart Shop""]]; this addAction[""Kart Clothing Shop"",life_fnc_clothingMenu,""kart""];";
 					};
 					id=2259;
 					type="C_man_1";
@@ -11998,7 +11998,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Harley Shop"",life_fnc_vehicleShopMenu,[""harley_car"",civilian,[""harley_dealer1"",""harley_dealer1_1""],""civ"",""Harley Dealership""]]; this setVariable[""realname"", ""Harley Shop""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Harley Shop"",life_fnc_vehicleShopMenu,[""harley_car"",civilian,[""harley_dealer1"",""harley_dealer1_1""],""civ"",""Harley Dealership""]]; this setVariable[""realname"", ""Harley Shop""];";
 					};
 					id=2368;
 					type="C_man_p_beggar_F";
@@ -13093,7 +13093,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this allowdamage false;  " \n "this enablesimulation false;  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""TCG_PDDTC"";  " \n "this addVest ""CID_Vest"";  " \n "this addBackpack ""FFG_PoliceBeltINV"";  " \n "this addHeadgear ""H_Cap_blk""; " \n "this addGoggles ""G_mas_wpn_gog_d"";  " \n "this addAction[""Sign-In Evidence"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; " \n "this setVariable[""realname"",""Evidence Technician""];";
+						init="this allowdamage false;  this enablesimulation false;  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TCG_PDDTC"";  this addVest ""CID_Vest"";  this addBackpack ""FFG_PoliceBeltINV"";  this addHeadgear ""H_Cap_blk""; this addGoggles ""G_mas_wpn_gog_d"";  this addAction[""Sign-In Evidence"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this setVariable[""realname"",""Evidence Technician""];";
 					};
 					id=2588;
 					type="B_RangeMaster_F";
@@ -16999,7 +16999,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init=" this allowdamage false; " \n " this enablesimulation false; " \n " removeAllWeapons this; " \n " removeAllItems this; " \n " removeAllAssignedItems this; " \n " removeUniform this; " \n " removeVest this; " \n " removeBackpack this; " \n " removeHeadgear this; " \n " removeGoggles this; " \n " this forceAddUniform ""Fox_Sert""; " \n " this addVest ""TCG_sertvest1""; " \n " this addBackpack ""FFG_PoliceBeltINV""; " \n " this addHeadgear ""jamie_pcapgreen2"";      " \n " this addAction[""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic""];      " \n " this addAction[""Police Arsenal"",life_fnc_weaponShopMenu,""cop_patrol""];        " \n " this addAction[""Police Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];    this setVariable[""realname"",""Sheriff Quatermaster""];";
+						init=" this allowdamage false;  this enablesimulation false;  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""Fox_Sert"";  this addVest ""TCG_sertvest1"";  this addBackpack ""FFG_PoliceBeltINV"";  this addHeadgear ""jamie_pcapgreen2"";       this addAction[""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic""];       this addAction[""Police Arsenal"",life_fnc_weaponShopMenu,""cop_patrol""];         this addAction[""Police Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];    this setVariable[""realname"",""Sheriff Quatermaster""];";
 					};
 					id=2824;
 					type="B_RangeMaster_F";
@@ -17164,7 +17164,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimulation false;    " \n "this allowDamage false;     " \n "removeAllWeapons this;      " \n "removeAllItems this;      " \n "removeAllAssignedItems this;      " \n "removeUniform this;      " \n "removeVest this;       " \n "removeBackpack this;      " \n "removeHeadgear this;       " \n "removeGoggles this;        " \n "this forceAddUniform ""TRYK_U_B_PCUGs_BLK"";" \n "this addVest ""CID_Vest"";       " \n "this addBackpack ""FFG_PoliceBeltINV"";       " \n "this addHeadgear ""TRYK_R_CAP_BLK"";  " \n "this addAction [""Detective Clothing Store"",life_fnc_clothingMenu,""detectiveclothing""];   " \n "this addAction[""Vehicle Depot"",life_fnc_vehicleShopMenu,[""det_car"",west,[""det_car_1"",""det_car_2""],""cop"",""ECSO Vehicle Depot""]];    " \n "this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""det_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];    " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Vehicle Depot""];";
+						init="this enableSimulation false;    this allowDamage false;     removeAllWeapons this;      removeAllItems this;      removeAllAssignedItems this;      removeUniform this;      removeVest this;       removeBackpack this;      removeHeadgear this;       removeGoggles this;        this forceAddUniform ""TRYK_U_B_PCUGs_BLK"";this addVest ""CID_Vest"";       this addBackpack ""FFG_PoliceBeltINV"";       this addHeadgear ""TRYK_R_CAP_BLK"";  this addAction [""Detective Clothing Store"",life_fnc_clothingMenu,""detectiveclothing""];   this addAction[""Vehicle Depot"",life_fnc_vehicleShopMenu,[""det_car"",west,[""det_car_1"",""det_car_2""],""cop"",""ECSO Vehicle Depot""]];    this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""det_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];    this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Vehicle Depot""];";
 					};
 					id=2830;
 					type="B_RangeMaster_F";
@@ -17219,7 +17219,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this allowdamage false; " \n "this enablesimulation false; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""jamie_sheriff""; " \n "this addVest ""highthreatvestblack""; " \n "this addBackpack ""FFG_PoliceBeltINV""; " \n "this addHeadgear ""Campaign_Hat_Dark""; " \n "this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; " \n "this addAction [""Police Clothing Store"",life_fnc_clothingMenu,""policeclothing""]; " \n "this addAction[""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic""]; " \n "this addAction[""Police Arsenal"",life_fnc_weaponShopMenu,""cop_patrol""]; " \n "this addAction[""Police Item Shop"",life_fnc_virt_menu,""cop""];  this setVariable[""realname"",""Sheriff Quartermaster""];";
+						init="this allowdamage false; this enablesimulation false; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; this forceAddUniform ""jamie_sheriff""; this addVest ""highthreatvestblack""; this addBackpack ""FFG_PoliceBeltINV""; this addHeadgear ""Campaign_Hat_Dark""; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction [""Police Clothing Store"",life_fnc_clothingMenu,""policeclothing""]; this addAction[""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Police Arsenal"",life_fnc_weaponShopMenu,""cop_patrol""]; this addAction[""Police Item Shop"",life_fnc_virt_menu,""cop""];  this setVariable[""realname"",""Sheriff Quartermaster""];";
 					};
 					id=2832;
 					type="B_RangeMaster_F";
@@ -17274,7 +17274,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this enableSimulation false;   " \n "this allowDamage false;    " \n "removeAllWeapons this;     " \n "removeAllItems this;     " \n "removeAllAssignedItems this;     " \n "removeUniform this;     " \n "removeVest this;      " \n "removeBackpack this;     " \n "removeHeadgear this;      " \n "removeGoggles this;       " \n "this forceAddUniform ""jamie_sheriff"";      " \n "this addVest ""highthreatvestblack"";      " \n "this addBackpack ""FFG_PoliceBeltINV"";      " \n "this addHeadgear ""Campaign_Hat_Dark"";   " \n "this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,[""cop_car_1"",""cop_car_2"",""cop_car_3""],""cop"",""ECSO Vehicle Depot""]];   " \n "this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Vehicle Shop""];";
+						init="this enableSimulation false;   this allowDamage false;    removeAllWeapons this;     removeAllItems this;     removeAllAssignedItems this;     removeUniform this;     removeVest this;      removeBackpack this;     removeHeadgear this;      removeGoggles this;       this forceAddUniform ""jamie_sheriff"";      this addVest ""highthreatvestblack"";      this addBackpack ""FFG_PoliceBeltINV"";      this addHeadgear ""Campaign_Hat_Dark"";   this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,[""cop_car_1"",""cop_car_2"",""cop_car_3""],""cop"",""ECSO Vehicle Depot""]];   this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];   this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Vehicle Shop""];";
 					};
 					id=2834;
 					type="B_RangeMaster_F";
@@ -107007,7 +107007,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;  " \n "this allowDamage false;  " \n "this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_tow"",civilian,""civ_car_5"",""civ"",""Tow Shop""]];  " \n "this setVariable[""realname"", ""Tow Shop""];";
+						init="this enableSimulation false;  this allowDamage false;  this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_tow"",civilian,""civ_car_5"",""civ"",""Tow Shop""]];  this setVariable[""realname"", ""Tow Shop""];";
 					};
 					id=14256;
 					type="C_man_p_beggar_F";
@@ -107122,7 +107122,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this allowDamage false;  " \n "this enableSimulation false;  " \n "removeHeadgear this; " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""]; " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""]; " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false; this enableSimulation false; removeHeadgear this; this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""]; this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];";
 						name="station_4";
 					};
 					id=14267;
@@ -107253,7 +107253,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];";
 						name="station_1";
 					};
 					id=14272;
@@ -107310,7 +107310,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  ";
 						name="station_2";
 					};
 					id=14274;
@@ -107383,7 +107383,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "removeHeadgear this;  " \n "this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  " \n "this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  " \n "this addAction[""Stick 'em up!"",life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  ";
 						name="station_3";
 					};
 					id=14277;
