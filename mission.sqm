@@ -5735,7 +5735,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false; this enableSimulation false; this enableSimulation false;this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
 						name="market_1";
 					};
 					id=615;
@@ -5837,7 +5837,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false; this enableSimulation false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
 						name="market_2";
 					};
 					id=620;
@@ -6488,7 +6488,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; " \n "this enableSimulation false;  " \n "this enableSimulation false;  " \n "this addAction[""Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
+						init="this allowDamage false; this enableSimulation false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Stick 'em up!"", life_fnc_robShops,"""",0,false,false,"""",playerSide == civilian];";
 						name="market_3";
 					};
 					id=13317;
