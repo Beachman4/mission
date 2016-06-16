@@ -41,10 +41,6 @@ switch (_filter) do
             ["highthreatvesttan","Tan Sheriff Vest",10],
             ["jamie_sheriff_vest","Green Sheriff Vest",10],
             ["TFO_TACVEST_SHERIFF","Sheriff Task Force Vest",10],
-            ["CID_Vest","CID Vest",10],
-            ["DAI_TACVEST_WHITE","DAI Vest White",10],
-            ["DAI_TACVEST_YELLOW","DAI Vest Yellow",10],
-            ["DAI_VEST_BLACK","DAI Vest",10],
             ["jamie_security","Security Vest",10],
             ["IA_VEST_BLACK","IA Vest Black",10],
             ["IA_VEST_WHITE","IA Vest White",10]
