@@ -35,7 +35,7 @@ ffg_to_hide = [2270, 8309, 8361, 8308, 2277, 2273, 2284, 8374, 2250, 2246, 2243,
     ([0,0,0] nearestObject _x) hideObjectGlobal true;
 } foreach ffg_to_hide;
 
-_markers = ["sert_1", "sert_2", "sert_3", "sert_4", "rebel_1", "rebel_2", "rebel_3", "rebel_4", "copbase_1", "tree_1", "town_2", "ganghideout3", "ganghideout1_1", "ganghideout1_2", "ganghideout1_3"];
+_markers = ["sert_1", "sert_2", "sert_3", "sert_4", "rebel_1", "rebel_2", "rebel_3", "rebel_4", "copbase_1", "tree_1", "town_2", "ganghideout3", "ganghideout1_1", "ganghideout1_2", "ganghideout1_3", "hostage_1", "hostage_2","hostage_3"];
 
 {
   _terrainobjects = nearestTerrainObjects[(getMarkerPos _x),[],(getMarkerSize _x) select 0];
