@@ -15,5 +15,4 @@ enableSaving[false,false];
 
 [] execVM "KRON_Strings.sqf";
 [] execVM "core\init.sqf";
-[] execVM "scripts\fn_robShopInit.sqf";
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};

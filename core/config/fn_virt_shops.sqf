@@ -39,5 +39,4 @@ switch (_shop) do
 	case "gold": {["Gold Buyer",["goldbar"]]};
 	case "ems": {["EMS Item Shop",["water","rabbit","apple","redgull","tbacon","peach"]]};
 	case "butcher": {["Bob's Flesh'n Besh",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
-	case "gasstation": {["Gas Station Shop",["water","coffee","cigarette","apple","fuelF"]]};
 };

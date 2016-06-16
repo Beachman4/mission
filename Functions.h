@@ -85,13 +85,6 @@ class Life_Client_Core
         class emtmarkers {};
         class pulloutdead {};
 	};
-
-	class Robbery
-	{
-		file = "FFG\robbery";
-		class robShops {};
-	};
-
 	class Actions
 	{
 		file = "core\actions";
