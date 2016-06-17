@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5527.9639,17.254572,4374.0039};
-		dir[]={-0.13366435,-0.22273552,-0.96569306};
-		up[]={-0.030540043,0.97487527,-0.22064802};
-		aside[]={-0.99057239,3.5809353e-007,0.13710672};
+		pos[]={5444.7671,42.703861,4342.459};
+		dir[]={0.77790391,-0.62076169,0.097591221};
+		up[]={0.61593598,0.78399795,0.077271737};
+		aside[]={0.12447856,-1.9499566e-008,-0.99222428};
 	};
 };
 binarizationWanted=0;
@@ -1250,14 +1250,14 @@ class Mission
 		class Item63
 		{
 			dataType="Marker";
-			position[]={5486.2305,17.703861,4351.6772};
-			name="market_m_2";
-			text="Market";
+			position[]={5089.1816,1977.5272,4062.8271};
+			name="mk_m_2";
+			text="Falls Market";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			angle=359.08798;
 			id=93;
-			atlOffset=2.3651028;
+			atlOffset=1985.5671;
 		};
 		class Item64
 		{
@@ -1274,11 +1274,11 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3482.5237,103.71368,2922.5532};
-			name="market_m_1";
-			text="Market";
+			name="mk_m_1";
+			text="TrickZ's Tacos";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
-			angle=358.25781;
+			angle=358.25797;
 			id=96;
 			atlOffset=81.918617;
 		};
@@ -2371,8 +2371,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5441.542,16.286116,4404.0815};
-				angles[]={0,4.6960335,0};
+				position[]={5441.3662,16.306149,4399.9082};
+				angles[]={0,4.7536535,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2383,7 +2383,6 @@ class Mission
 			};
 			id=364;
 			type="Land_Atm_02_F";
-			atlOffset=-3.2424927e-005;
 		};
 		class Item152
 		{
@@ -5761,7 +5760,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false; this enableSimulation false; this enableSimulation false;this addAction[""Market"",life_fnc_virt_menu,""market""];";
-						name="market_1";
+						name="mk_1";
 					};
 					id=615;
 					type="C_man_1";
@@ -5863,7 +5862,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false; this enableSimulation false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""];";
-						name="market_2";
+						name="mk_2";
 					};
 					id=620;
 					type="C_man_1";
@@ -13014,7 +13013,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891834;
+			angle=55.89183;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13160,7 +13159,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759815;
+			angle=56.759811;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -107091,8 +107090,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={2905.9155,15,3999.2783};
-			name="station_m_1";
-			text="Gas Station";
+			name="gs_m_3";
+			text="Yoda's Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14260;
@@ -107101,8 +107100,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={3782.7048,15.055177,4120.8584};
-			name="station_m_2";
-			text="Gas Station";
+			name="gs_m_2";
+			text="Terry's Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14261;
@@ -107112,8 +107111,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5443.0835,15.020001,4405.6685};
-			name="station_m_3";
-			text="Gas Station";
+			name="gs_m_1";
+			text="Falls Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14262;
@@ -107122,8 +107121,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={5317.2119,15.02,2395.1514};
-			name="station_m_4";
-			text="Gas Station";
+			name="gs_m_4";
+			text="Barnstable Gas Station";
 			type="A3L_Fuel_Icon";
 			colorName="ColorGreen";
 			id=14263;
@@ -107148,7 +107147,7 @@ class Mission
 					class Attributes
 					{
 						init="this allowDamage false; this enableSimulation false; removeHeadgear this; this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""]; this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];";
-						name="station_4";
+						name="gs_4";
 					};
 					id=14267;
 					type="C_man_polo_5_F";
@@ -107279,7 +107278,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];";
-						name="station_1";
+						name="gs_3";
 					};
 					id=14272;
 					type="C_man_1";
@@ -107327,7 +107326,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3772.4241,15.615479,4122.7314};
+						position[]={3772.4241,15.615439,4122.7319};
 						angles[]={0,1.4674903,0};
 					};
 					side="Civilian";
@@ -107336,11 +107335,11 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  ";
-						name="station_2";
+						name="gs_2";
 					};
 					id=14274;
 					type="C_man_1";
-					atlOffset=0.61404037;
+					atlOffset=0.61400032;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -107370,7 +107369,7 @@ class Mission
 			{
 			};
 			id=14273;
-			atlOffset=0.61404037;
+			atlOffset=0.61400032;
 		};
 		class Item5205
 		{
@@ -107409,7 +107408,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="this allowDamage false;   this enableSimulation false;   removeHeadgear this;  this addAction[""Gas Station Shop"",life_fnc_virt_menu,""gasstation""];  this addAction[""Gas Station Item Shop"",life_fnc_weaponShopMenu,""gas""];  ";
-						name="station_3";
+						name="gs_1";
 					};
 					id=14277;
 					type="C_man_1";
