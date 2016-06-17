@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=15050;
+		nextID=15054;
 	};
 	class MarkerIDProvider
 	{
-		nextID=285;
+		nextID=286;
 	};
 	class Camera
 	{
-		pos[]={4242.897,153.94247,3191.1213};
-		dir[]={-0.038337585,-0.49332166,0.86915052};
-		up[]={-0.021743743,0.86969745,0.49304369};
-		aside[]={0.99909842,-5.5594792e-006,0.044067681};
+		pos[]={5527.9639,17.254572,4374.0039};
+		dir[]={-0.13366435,-0.22273552,-0.96569306};
+		up[]={-0.030540043,0.97487527,-0.22064802};
+		aside[]={-0.99057239,3.5809353e-007,0.13710672};
 	};
 };
 binarizationWanted=0;
@@ -536,7 +536,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5499;
+		items=5502;
 		class Item0
 		{
 			dataType="Marker";
@@ -13014,7 +13014,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891838;
+			angle=55.891834;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13160,7 +13160,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759819;
+			angle=56.759815;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -111855,6 +111855,7 @@ class Mission
 			};
 			id=15014;
 			type="CUP_A2_city_30_25";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item5472
 		{
@@ -111888,6 +111889,7 @@ class Mission
 			};
 			id=15016;
 			type="CUP_A2_city_6";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item5474
 		{
@@ -112285,6 +112287,85 @@ class Mission
 			};
 			id=15044;
 			type="CUP_A2_shed_w03_pmc";
+		};
+		class Item5499
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5527.7295,16.731192,4365.519};
+				angles[]={0,0.048372071,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=15050;
+			type="A3L_Store_General";
+		};
+		class Item5500
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5525.7124,15.001439,4364.1782};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[""Protest Shop"",life_fnc_weaponShopMenu,""protest"",0,false,false,"""",'playerSide == civilian'];";
+						isPlayer=1;
+					};
+					id=15052;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=15051;
+		};
+		class Item5501
+		{
+			dataType="Marker";
+			position[]={5527.5967,15,4365.5381};
+			name="marker_285";
+			text="EMQ'S Protest Shop";
+			type="A3L_Store_Green_Icon";
+			colorName="ColorCIV";
+			id=15053;
 		};
 	};
 };

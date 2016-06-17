@@ -43,8 +43,8 @@ switch (_shop) do
 			["S_Skyline_White",95000],
 			["A3L_VolvoS60RBlack",50000],
 			["A3L_VolvoS60Rred",50000],
-            ["Nissan_GTR_Black",100000],
-            ["Nissan_GTR_Red",100000],
+            ["Nissan_GTR_Black",500000],
+            ["Nissan_GTR_Red",500000],
 			["A3L_Subaru_WRX_DarkBlue",100000],
             ["A3L_Subaru_WRX_Grey",100000],
             ["Nissan_GTR_White",100000]
