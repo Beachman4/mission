@@ -126,6 +126,17 @@ switch(_shop) do
                         };
                 };
         };
+		case "protest":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civilian!"};
+                        default
+                        {
+                                ["Protesting Shop",[["A3L_Sign2","Legalize Weed",7500],["A3L_Sign","Police Pigs",7500],["Tv_Camera","T.V. Camera",10000]]];
+                        };
+                };
+        };
 
         case "genstore":
         {
