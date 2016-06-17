@@ -12,6 +12,7 @@ A3L_RunCode = compileFinal "
 [] execVM "A3L_Stuff\jailsystem.sqf";
 [] execVM "A3L_Stuff\bank.sqf";
 [] execVM "A3L_Stuff\hunting.sqf";
+[] execVM "FFG\robbery\robShopInit.sqf";
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
