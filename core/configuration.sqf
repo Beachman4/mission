@@ -21,6 +21,7 @@ life_knockout = false;
 life_interrupted = false;
 sound_faded = false;
 life_respawned = false;
+goingtojail = true;
 life_removeWanted = false;
 __CONST__(life_save_civ,TRUE);
 __CONST__(life_save_yinv,TRUE);
@@ -56,12 +57,12 @@ life_vehicles = [];
 bank_robber = [];
 switch (playerSide) do
 {
-	case west: 
+	case west:
 	{
 		life_atmcash = 25000;
 		life_paycheck = 2000;
 	};
-	case civilian: 
+	case civilian:
 	{
 		life_atmcash = 25000;
 		life_paycheck = 1000;
@@ -74,7 +75,7 @@ switch (playerSide) do
 
 life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly);
-life_inv_items = 
+life_inv_items =
 [
 	"life_inv_oilu",
 	"life_inv_oilp",
@@ -158,7 +159,7 @@ life_inv_items =
 	"life_inv_tobacco",
 	"life_inv_cigarette",
 	"life_inv_kidney",
-	"life_inv_raxsrum"	
+	"life_inv_raxsrum"
 ];
 {missionNamespace setVariable[_x,0];} foreach life_inv_items;
 life_licenses =
@@ -193,7 +194,7 @@ life_licenses =
 life_dp_points =["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["cannabis",2500],["opium",2500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
 
-sell_array = 
+sell_array =
 [
 	["apple",10],
 	["heroinu",2500],
@@ -250,8 +251,8 @@ sell_array =
 	["raw rabbit",700],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",2500], 
-	["zoobeer",25], 
+	["goldbar",2500],
+	["zoobeer",25],
 	["BarGate",500],
 	["RoadBlockConc",1000],
 	["RoadBlockWood",750],
@@ -516,8 +517,8 @@ life_garage_prices =
 	["A3L_SuburbanFG",0],
 	["M1030",0],
 	["B_MRAP_01_F",7500]
-	
-	
+
+
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 

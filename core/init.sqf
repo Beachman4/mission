@@ -54,6 +54,7 @@ switch (playerSide) do
             waitUntil{!isNull (findDisplay 38500)};
             waitUntil{isNull (findDisplay 38500)};
         };
+
         [] call life_fnc_zoneCreator;
 	};
 	case independent:

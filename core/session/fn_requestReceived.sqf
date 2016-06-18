@@ -51,9 +51,10 @@ switch(playerSide) do {
 			[] spawn life_fnc_initGang;
 		};
 		[] spawn life_fnc_initHouses;
-		if (life_arrestMinutes > 0) then {
-			[] call yoda_fnc_jailCheck;
-		};
+		/*if (parseNumber(life_arrestMinutes) > 0) then {
+			[false,false,life_arrestMinutes,life_arrestReason] call fnc_jailsetup;
+			goingtojail = true;
+		};*/
 	};
 
 
