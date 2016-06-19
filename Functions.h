@@ -56,13 +56,6 @@ class FFG_Client_Core
         class hudSetup {};
         class hud {};
     };
-	class RobShops
-	{
-		file = "FFG\robbery";
-		class robShopInit {};
-		class robShopReset {};
-		class robShops {};
-	}
 };
 
 class Life_Client_Core
