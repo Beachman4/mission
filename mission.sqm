@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	class ItemIDProvider
 	{
-		nextID=15054;
+		nextID=15055;
 	};
 	class MarkerIDProvider
 	{
-		nextID=286;
+		nextID=287;
 	};
 	class Camera
 	{
-		pos[]={5527.9639,17.254572,4374.0039};
-		dir[]={-0.13366435,-0.22273552,-0.96569306};
-		up[]={-0.030540043,0.97487527,-0.22064802};
-		aside[]={-0.99057239,3.5809353e-007,0.13710672};
+		pos[]={5458.0684,19.336706,4301.957};
+		dir[]={-0.93259263,-0.35406581,-0.070310652};
+		up[]={-0.35307446,0.93521702,-0.026619455};
+		aside[]={-0.075179122,-6.3470725e-007,0.99718666};
 	};
 };
 binarizationWanted=0;
@@ -536,7 +536,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=5502;
+		items=5503;
 		class Item0
 		{
 			dataType="Marker";
@@ -6486,19 +6486,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6548.5107,29.525948,5813.2007};
-						angles[]={0,3.335798,0};
+						position[]={6548.5112,29.526457,5813.2007};
+						angles[]={0,3.3357954,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Rebel Car Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""rebel_carspawn"",""civ"",""Rebel Car Shop""],0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
 						name="reb_1_2";
 					};
 					id=3369;
 					type="O_Soldier_F";
-					atlOffset=0.88750076;
+					atlOffset=0.88800049;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item55
 				{
@@ -10153,7 +10176,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false;     this allowDamage false;     this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""heli_spawn_emt"",""med"",""Fire Station""]]; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    createDialog ""Life_impound_menu"";    disableSerialization;    ctrlSetText[2802,""Fetching Vehicles....""];    life_garage_sp = ""med_car_3"";  }];   this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false;     this allowDamage false;     this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];    this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];    this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];   this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];   this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];   this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];   this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_hs"",""med"",""Fire Station""]]; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";    createDialog ""Life_impound_menu"";    disableSerialization;    ctrlSetText[2802,""Fetching Vehicles....""];    life_garage_sp = ""med_car_3"";  }];   this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=1380;
 					type="B_RangeMaster_F";
@@ -12324,7 +12347,7 @@ class Mission
 					};
 					id=2451;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011730194;
+					atlOffset=0.030774117;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12373,7 +12396,7 @@ class Mission
 			{
 			};
 			id=2450;
-			atlOffset=0.00011730194;
+			atlOffset=0.030774117;
 		};
 		class Item491
 		{
@@ -13014,7 +13037,7 @@ class Mission
 			position[]={3080.9365,15.001168,3835.1355};
 			name="cop_car_1";
 			type="Empty";
-			angle=55.891834;
+			angle=55.891827;
 			id=2581;
 			atlOffset=1.0490417e-005;
 		};
@@ -13160,7 +13183,7 @@ class Mission
 			position[]={3077.3992,15.000757,3841.9053};
 			name="cop_car_2";
 			type="Empty";
-			angle=56.759815;
+			angle=56.759808;
 			id=2589;
 			atlOffset=0.00075721741;
 		};
@@ -22942,7 +22965,7 @@ class Mission
 			};
 			id=3211;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.15608406;
 		};
 		class Item1097
 		{
@@ -22959,7 +22982,7 @@ class Mission
 			};
 			id=3212;
 			type="Land_i_Garage_V1_F";
-			atlOffset=0.12732315;
+			atlOffset=0.15608406;
 		};
 		class Item1098
 		{
@@ -112366,6 +112389,15 @@ class Mission
 			type="A3L_Store_Green_Icon";
 			colorName="ColorCIV";
 			id=15053;
+		};
+		class Item5502
+		{
+			dataType="Marker";
+			position[]={6555.1548,28.963074,5797.9209};
+			name="rebel_carspawn";
+			type="Empty";
+			angle=289.25299;
+			id=15054;
 		};
 	};
 };

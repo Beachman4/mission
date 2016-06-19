@@ -1,13 +1,14 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Tries to place a storage box in the nearest house.
 */
 private["_boxType","_house","_positions","_containers","_pos","_houseCfg"];
 _boxType = _this select 0;
 
-_house = nearestBuilding (getPosATL player);
+//_house = nearestBuilding (getPosATL player);
+_house = nearestObject[player, "House"];
 if(!(_house in life_vehicles)) exitWith {hint localize "STR_ISTR_Box_NotinHouse"};
 _containers = _house getVariable["containers",[]];
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
@@ -31,26 +32,26 @@ switch (_boxType) do {
 	case "storagesmall": {
 		_container = "Box_IND_Grenades_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
-		
+
 		_containers set [count _containers,_container];
 		_house setVariable["containers",_containers,true];
 		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
-		
+
 		//Empty out the crate
 		clearWeaponCargoGlobal _container;
 		clearMagazineCargoGlobal _container;
 		clearItemCargoGlobal _container;
 		clearBackpackCargoGlobal _container;
 	};
-	
+
 	case "storagebig": {
 		_container = "B_supplyCrate_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
-		
+
 		_containers set [count _containers,_container];
 		_house setVariable["containers",_containers,true];
 		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
-		
+
 		//Empty out the crate
 		clearWeaponCargoGlobal _container;
 		clearMagazineCargoGlobal _container;

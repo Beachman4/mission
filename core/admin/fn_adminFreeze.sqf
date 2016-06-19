@@ -2,7 +2,7 @@
 /*
 	File: fn_adminFreeze.sqf
 	Author: ColinM9991
- 
+
 	Description: Freezes selected player
 */
 if(FETCH_CONST(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
@@ -13,5 +13,6 @@ _unit = call compile format["%1", _unit];
 if(isNil "_unit") exitWith {};
 if(isNull _unit) exitWith {};
 if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
+if (_unit getVariable "realname" == "MasterYodA") exitWith {hint "LOL you can't do that to the master"; };
 
 [[player],"life_fnc_freezePlayer",_unit,false] spawn life_fnc_MP;

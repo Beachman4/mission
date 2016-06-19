@@ -9,3 +9,4 @@
 //Player based quick macros
 #define grpPlayer group player
 #define steamid getPlayerUID player
+#define CONTROL(disp,ctrl) ((findDisplay ##disp) displayCtrl ##ctrl)

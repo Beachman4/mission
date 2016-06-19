@@ -21,6 +21,8 @@ class Yoda
 		file = "yoda";
 
 		class jailCheck {};
+		class bombCar {};
+		class bombCarMusic {};
 	};
 };
 
@@ -121,6 +123,7 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class newsBroadcast {};
 	};
 
 	class Housing
@@ -282,6 +285,8 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class enablecollisionwith {};
   		class disablecollisionwith {};
+  		class AAN {};
+  		class postNewsBroadcast {};
 	};
 
 	class Network

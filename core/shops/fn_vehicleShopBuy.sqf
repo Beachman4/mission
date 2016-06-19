@@ -32,14 +32,14 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"};
 	_vehicle allowDamage false;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,14]);
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_main_F"],50] select 0;
+	_vehicle setPosATL (_hs modelToWorld[-30, -13, 11.8]);
+	_vehicle setDir 12;
 	_vehicle lock 2;
 	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
-	_vehicle disableTIEquipment true;
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -68,8 +68,11 @@ switch(playerSide) do {
 			[_vehicle,"cop_apc",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
-	
+
 	case civilian: {
+		if (_className == "Jonzie_96_Impala") then {
+			[_vehicle] call yoda_fnc_bombCar;
+		};
 		if(_className == "B_Heli_Light_01_F") then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
@@ -80,7 +83,7 @@ switch(playerSide) do {
 			[_vehicle,"sports_prius",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
-	
+
 	case independent: {
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 		if(_className == "IVORY_PRIUS") then {

@@ -1,14 +1,14 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Handles various different ammo types being fired.
 */
 private["_ammoType","_projectile"];
-_ammoType = _this select 4; 
+_ammoType = _this select 4;
 _projectile = _this select 6;
 
-if(_ammoType == "GrenadeHand_stone") then {
+if(_ammoType == "SUPER_flash_ammo") then {
 	_projectile spawn {
 		private["_position"];
 		while {!isNull _this} do {

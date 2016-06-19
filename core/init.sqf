@@ -95,8 +95,9 @@ __CONST__(life_paycheck,life_paycheck);
 player setVariable["stealth", false, true];
 
 if (__GETC__(life_adminlevel) > 3) then {
-    player addAction["Spawn Weapon", "VAS\open.sqf"];
+    player addAction["<t color='#ff1111'>Spawn Weapon</t>", "VAS\open.sqf"];
 	[] call compile preprocessFileLineNumbers "proving_ground\init.sqf";
+	execVM "yoda\yoda_init.sqf";
 };
 if (playerSide == west) then {
     player setVariable["copLevel", 1, true];

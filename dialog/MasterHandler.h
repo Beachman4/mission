@@ -32,3 +32,4 @@
 #include "smsmenu.hpp"
 #include "arrestmenu.hpp"
 #include "compensate.hpp"
+#include "policenotify.hpp"

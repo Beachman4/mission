@@ -77,7 +77,7 @@ switch (_shop) do
             ["A3L_BMW_M6_Red",100000],
             ["A3L_BMW_M6_Yellow",100000],
             ["A3L_BMW_M6_White",100000]
-            
+
         ];
     };
     case "audi_car":
@@ -298,7 +298,8 @@ switch (_shop) do
 		_return =
 		[
 			["B_Quadbike_01_F",5000],
-			["B_Heli_Light_01_F",800000]
+			["B_Heli_Light_01_F",800000],
+			["Jonzie_96_Impala", 3000000]
 		];
 
 	};
@@ -320,7 +321,7 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return =
-		[			
+		[
 			["DAR_CVPIPolice",10],
 			["DAR_CVPISlick",10],
 			["DAR_TaurusPolice",10],
@@ -354,7 +355,7 @@ switch (_shop) do
 	{
         if(__GETC__(life_coplevel) >= 1) then {
             _return =
-            [			
+            [
                 ["A3L_CVPIUCSERT",10],
                 ["A3L_TaurusUC",10],
                 ["DAR_ImpalaPoliceDet",10],
@@ -391,7 +392,8 @@ switch (_shop) do
             ["sab_piper5",400000],
             ["sab_RobinDR400_2",425000],
             ["sab_RobinDR400_3",425000],
-            ["sab_RobinDR400_5",425000]
+            ["sab_RobinDR400_5",425000],
+            ["EC635_Unarmed", 500000]
 		];
 	};
 	case "cop_air":
@@ -429,7 +431,8 @@ switch (_shop) do
 		_return =
 		[
 			["EMS_Chopper",20000],
-			["EMS_Orca",30000]
+			["EMS_Orca",30000],
+			["A3L_EC635_SAR", 40000]
 		];
 	};
 	case "civ_ship":

@@ -42,7 +42,10 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel, 0);
 		life_houses = _this select 11;
 		{
-			_house = nearestBuilding (call compile format["%1", _x select 0]);
+			/*_house = nearestBuilding (call compile format["%1", _x select 0]);*/
+			_house = nearestObject [call compile format["%1", _x select 0], "House"];
+			_uid = getPlayerUID player;
+			_house setVariable["house_owner",[_uid,profileName],true];
 			life_vehicles set[count life_vehicles,_house];
 		} foreach life_houses;
 
