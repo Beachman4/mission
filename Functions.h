@@ -181,6 +181,7 @@ class Life_Client_Core
         class clothing_policeclothing {};
         class clothing_sertclothing {};
 		class clothing_detectiveclothing{};
+		class clothing_mask {};
 	};
 
 	class Admin

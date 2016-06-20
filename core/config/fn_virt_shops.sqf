@@ -6,6 +6,9 @@ switch (_shop) do
 	case "market": {
 		["Market",["cigarette","zoobeer","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]
 	};
+	class "gasstation": {
+		["Gas Station Shop", ["cigarette", "zoobeer", "water", "apple", "redgull", "tbacon", "fuelF"]]
+	};
 	case "rebel": {
 		["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]
 	};
@@ -29,7 +32,7 @@ switch (_shop) do
 	};
 	case "farmingmarket": {
 		["Seed Market",["wheat seed","sunflower seed","corn seed","bean seed","cotton seed","olive seed","opium seed","cannabis seed","pumpkin seed","wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]
-	};	
+	};
 	case "glass": {["Glass Dealer",["glass"]]};
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
 	case "diamond": {["Diamond Dealer",["diamond","diamondc"]]};

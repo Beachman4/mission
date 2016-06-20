@@ -144,7 +144,7 @@ switch(_shop) do
         };
 		case "gas":
 		{
-				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750]]];
+				["Gas Station Item Shop",[["ToolKit",nil,500],["FirstAidKit",nil,250],["ItemMap",nil,60],["ItemGPS",nil,750],["NVGoggles",nil,5000]]];
 		};
 		case "dai_shop":
         {
