@@ -53,5 +53,7 @@ while {hostage_alive} do {
 };
 
 if (yoda_hostage_failed) then {
-	//Cooldown
+	yoda_hostage_too_soon = true;
+	sleep (30 * 60);
+	yoda_hostage_too_soon = false;
 };

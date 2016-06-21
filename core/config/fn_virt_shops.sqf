@@ -6,7 +6,7 @@ switch (_shop) do
 	case "market": {
 		["Market",["cigarette","zoobeer","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig"]]
 	};
-	class "gasstation": {
+	case "gasstation": {
 		["Gas Station Shop", ["cigarette", "zoobeer", "water", "apple", "redgull", "tbacon", "fuelF"]]
 	};
 	case "rebel": {
