@@ -7,9 +7,9 @@
 */
 private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
 _vehicle = cursorTarget;
-if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};
+if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
-if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
+if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
@@ -50,11 +50,12 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	//if((time - _time)  < 120) exitWith {hint "This is a freshly spawned vehicle, you have no right impounding it."};
 	if((count crew _vehicle) == 0) then
 	{
-		if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {life_action_inUse = false;};
+		if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") )) exitWith {life_action_inUse = false;};
 		_type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 		switch (true) do
 		{
 			case (_vehicle isKindOf "Car"): {_price = (call life_impound_car);};
+            case (_vehicle isKindOf "Bicycle"): {_price = (call life_impound_car);};
 			case (_vehicle isKindOf "Ship"): {_price = (call life_impound_boat);};
 			case (_vehicle isKindOf "Air"): {_price = (call life_impound_air);};
 		};
