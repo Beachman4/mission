@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3232.304,111.32363,4036.7158};
-		dir[]={-0.69325966,-0.43065667,-0.5780291};
-		up[]={-0.33092716,0.90241307,-0.27591968};
-		aside[]={-0.64044607,-8.1316102e-007,0.76812929};
+		pos[]={3552.0859,84.999138,3353.1223};
+		dir[]={-0.067516625,-0.98834932,-0.13713866};
+		up[]={-0.4365257,0.15254781,-0.8866601};
+		aside[]={-0.89725173,4.6986097e-006,0.44174364};
 	};
 };
 binarizationWanted=0;
@@ -1680,13 +1680,13 @@ class Mission
 		class Item101
 		{
 			dataType="Marker";
-			position[]={3557.8093,20.560266,3346.6421};
+			position[]={3565.8799,20.560328,3289.0583};
 			name="atm_marker_2_1";
 			type="A3L_ATM_Icon";
 			colorName="ColorGreen";
 			angle=359.11758;
 			id=153;
-			atlOffset=5.5602665;
+			atlOffset=5.5603275;
 		};
 		class Item102
 		{
@@ -2157,7 +2157,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3564.7761,16.593657,3293.5911};
+				position[]={3564.6509,16.59392,3293.7039};
 				angles[]={0,0.11205874,0};
 			};
 			side="Empty";
@@ -2168,7 +2168,7 @@ class Mission
 			};
 			id=275;
 			type="Land_Atm_02_F";
-			atlOffset=0.30750847;
+			atlOffset=0.30777168;
 		};
 		class Item140
 		{
@@ -11111,7 +11111,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3555.9595,15.307509,3306.0977};
+				position[]={3555.8342,15.307773,3306.2104};
 				angles[]={0,0.14134419,0};
 			};
 			side="Empty";
@@ -11126,74 +11126,74 @@ class Mission
 		class Item410
 		{
 			dataType="Marker";
-			position[]={3543.04,20.560266,3374.1414};
+			position[]={3551.1106,20.560328,3316.5576};
 			name="audi_dealer1";
 			type="Empty";
 			angle=62.64497;
 			id=2441;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item411
 		{
 			dataType="Marker";
-			position[]={3541.946,20.560266,3367.2798};
+			position[]={3550.0166,20.560328,3309.696};
 			name="audi_dealer1_1";
 			type="Empty";
 			angle=65.486023;
 			id=2442;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item412
 		{
 			dataType="Marker";
-			position[]={3571.9905,20.560266,3367.7478};
+			position[]={3580.061,20.560328,3310.1641};
 			name="sports_dealer1";
 			type="Empty";
 			angle=306.62808;
 			id=2443;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item413
 		{
 			dataType="Marker";
-			position[]={3570.0371,20.560266,3356.7466};
+			position[]={3578.1077,20.560328,3299.1628};
 			name="sports_dealer1_1";
 			type="Empty";
 			angle=305.98395;
 			id=2444;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item414
 		{
 			dataType="Marker";
-			position[]={3559.614,20.560266,3356.2549};
+			position[]={3567.6846,20.560328,3298.6711};
 			name="bmw_dealer1_1";
 			type="Empty";
 			angle=57.478165;
 			id=2445;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item415
 		{
 			dataType="Marker";
-			position[]={3561.2546,20.560266,3367.6597};
+			position[]={3569.3252,20.560328,3310.0759};
 			name="bmw_dealer1";
 			type="Empty";
 			angle=56.055042;
 			id=2446;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item416
 		{
 			dataType="Marker";
-			position[]={3540.0972,20.560266,3351.5452};
+			position[]={3548.1677,20.560328,3293.9614};
 			name="vehicle_outlet";
 			text="Vehicle Dealer";
 			type="A3L_Car_Icon";
 			colorName="ColorBlack";
-			angle=0.84706497;
+			angle=0.847;
 			id=2447;
-			atlOffset=5.5602665;
+			atlOffset=5.3771772;
 		};
 		class Item417
 		{
@@ -11584,7 +11584,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3531.3145,15.308949,3306.8494};
+						position[]={3531.1892,15.309212,3306.9622};
 						angles[]={0,4.8244624,0};
 					};
 					side="Civilian";
@@ -11658,7 +11658,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3536.2935,15.308949,3303.5701};
+						position[]={3536.1682,15.309212,3303.6829};
 						angles[]={0,3.2984967,0};
 					};
 					side="Civilian";
@@ -11732,7 +11732,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3543.178,15.311062,3304.8083};
+						position[]={3543.0527,15.311325,3304.9211};
 						angles[]={0,1.7089283,0};
 					};
 					side="Civilian";
@@ -86028,8 +86028,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3527.0762,16.679932,3293.3452};
-				angles[]={0.0077281403,4.2613897,6.2780066};
+				position[]={3526.9509,16.680195,3293.458};
+				angles[]={0,4.2613897,0};
 			};
 			side="Empty";
 			class Attributes
@@ -86038,7 +86038,7 @@ class Mission
 			};
 			id=13251;
 			type="cg_audi_r8_plus_white";
-			atlOffset=0.25281715;
+			atlOffset=0.43596745;
 		};
 		class Item4018
 		{
@@ -104762,7 +104762,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3140.1047,16.20153,3896.5454};
+				position[]={3140.1423,16.20153,3896.5388};
 				angles[]={0,1.6640859,0};
 			};
 			side="Empty";
