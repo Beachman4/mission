@@ -35,6 +35,7 @@ switch (_mode) do
 			case "home": {_var = "license_civ_home"};
 			case "dai": {_var = "license_civ_dai"};
 			case "rifle": {_var = "license_civ_rifle"};
+			case "civShop": {_var = "license_cop_civShop"};
 			default {_var = ""};
 		};
 	};
@@ -69,6 +70,7 @@ switch (_mode) do
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_dai": {_var = "dai"};
 			case "license_civ_rifle": {_var = "rifle"};
+			case "license_cop_civShop": {_var = "civShop"};
 			default {_var = ""};
 		};
 	};

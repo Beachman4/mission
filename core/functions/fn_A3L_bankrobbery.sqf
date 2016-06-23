@@ -6,7 +6,12 @@ if (count (attachedobjects player) > 0) exitwith {["You are already carrying a s
 if ((_this select 3) getVariable "robbed") exitwith {["This stash of cash was recently robbed.",30,"red"] call A3L_Fnc_Msg;};
 _timer = 60 + (floor(random 60));
 ["Grabbing the money.. this may take a few minutes!",30,"blue"] call A3L_Fnc_Msg;
+if (_this getVariable "bank" == "bank_1")
 [[1,"CAMERAS HAVE SPOTTED ROBBERS AT THE FALLS CHURCH BANK!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+if (_this getVariable "bank" == "bank_2")
+[[1,"CAMERAS HAVE SPOTTED ROBBERS AT THE BANK OF FREEDOM!"],"life_fnc_broadcase",west,false] spawn life_fnc_MP;
+if (_this getVariable "bank" == "bank_3")
+[[1,"CAMERAS HAVE SPOTTED ROBBERS AT THE BARNSTABLE BANK!"],"life_fnc_broadcase",west,false] spawn life_fnc_MP;
 (_this select 3) setVariable ["robbed",true,true];
 
 [_timer,(_this select 3)] spawn {

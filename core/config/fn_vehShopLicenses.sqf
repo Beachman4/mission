@@ -21,10 +21,50 @@ switch (life_veh_shop select 0) do
 	case "dezzie_car": {_ret = license_civ_driver;};
 	case "kart_shop": {_ret = license_civ_driver;};
 	case "med_air_hs": {_ret = license_med_air;};
-	case "civ_car": {_ret = license_civ_driver;};
-	case "ford_car": {_ret = license_civ_driver;};
-	case "chev_car": {_ret = license_civ_driver;};
-	case "dodge_car": {_ret = license_civ_driver;};
+	case "civ_car": 
+	{
+		if(playerSide=="civilian") then
+		{
+			_ret = license_civ_driver;
+		}
+		else
+		{
+			_ret = license_cop_civShop;
+		};
+	};
+	case "ford_car": 
+	{
+		if(playerSide==civilian) then
+		{
+			_ret = license_civ_driver;
+		}
+		else
+		{
+			_ret = license_cop_civShop;
+		};
+	};
+	case "chev_car": 
+	{
+		if(playerSide==civilian) then
+		{
+			_ret = license_civ_driver;
+		}
+		else
+		{
+			_ret = license_cop_civShop;
+		};
+	};
+	case "dodge_car": 
+	{
+		if(playerSide==civilian) then
+		{
+			_ret = license_civ_driver;
+		}
+		else
+		{
+			_ret = license_cop_civShop;
+		};
+	};
 	case "exo_car": {_ret = license_civ_driver;};
     case "harley_car": {_ret = license_civ_driver;};
     case "audi_car": {_ret = license_civ_driver;};
@@ -43,6 +83,7 @@ switch (life_veh_shop select 0) do
     case "sert_car": {_ret = true;};
     case "sert_air": {_ret = true;};
     case "det_car": {_ret = true;};
+	case "civ_tow": {_ret = true;};
 	case "cop_ship":
 	{
 		if(_veh == "B_Boat_Armed_01_minigun_F") then
