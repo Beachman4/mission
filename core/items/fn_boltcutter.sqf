@@ -62,7 +62,7 @@ while {true} do
 		_progressBar = _ui displayCtrl 38201;
 		_titleText = _ui displayCtrl 38202;
 	};
-	_cP = _cP + _cpRate;
+	_cP = _cP + 0.01;
 	_progressBar progressSetPosition _cP;
 	_titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
 	if(_cP >= 1 OR !alive player) exitWith {};
