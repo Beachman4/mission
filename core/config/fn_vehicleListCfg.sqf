@@ -94,7 +94,7 @@ switch (_shop) do
             ["cg_audi_rs5_rouge",250000],
             ["cg_audi_rs5_white",250000],
             ["cg_audi_rs5_jaune",250000],
-			["Nhz_audia8limo",200000]
+			["Nhz_audia8limo",300000]
         ];
     };
     case "taxi_car":
