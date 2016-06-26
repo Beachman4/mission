@@ -29,6 +29,95 @@ waitUntil{!isNil "life_server_isReady"};
 waitUntil {life_session_completed};
 0 cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
+
+if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
+	
+	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+	999999 cutFadeOut 99999999;
+
+};
+
+_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+
+if (!(_TFenabled)) then {
+
+	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do 
+	{
+		titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+		sleep 2;
+	};
+};
+
+FFG_TFEnabled = true;
+FFG_onTsServer = "Fast Forward Gaming" == (call TFAR_fnc_getTeamSpeakServerName);
+FFG_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+titleText ["Task Force Radio loaded succesfully","BLACK IN"];
+
+[] spawn
+{
+	while {true} do 
+	{
+		_isadmin = false;
+		if (!(isNil "life_adminlevel")) then
+		{
+			_adminlvl = life_adminlevel call BIS_fnc_parseNumber;
+			if (_adminlvl > 0) then 
+			{
+				_isadmin = true;
+			};
+		};
+
+		if (!(_isadmin)) then
+		{
+			_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+			_onChannel2 = "SERT Training" == (call TFAR_fnc_getTeamSpeakChannelName);
+			if !(_onChannel || _onChannel2) then
+			{
+				titleText ["| Please reload your TaskForce Radio Plugin (teamspeak) to join the TFR channel | Settings -> Plugins -> Reload All |", "BLACK"];
+				FFG_onChannel = false;
+			} 
+			else 
+			{
+				if (!(FFG_onChannel)) then
+				{
+					titleText ["TS channel check completed. Welcome!","BLACK IN"];
+					FFG_onChannel = true;
+				};
+			};
+	
+
+			_onTsServer = "Fast Forward Gaming" == (call TFAR_fnc_getTeamSpeakServerName);
+			if (!(_onTsServer)) then 
+			{
+				titleText ["Please join the FFG Teamspeak at ts.FastForwardGaming.net | And/Or enable Task Force Radio in your TS3 Plugins! | TS3 -> Settings -> Plugins |", "BLACK"];
+				FFG_onTsServer = false;
+			} 
+			else 
+			{
+				if (!(FFG_onTsServer)) then 
+				{
+					titleText ["TS server check completed. Welcome!","BLACK IN"];
+					FFG_onTsServer = true;
+				};
+			};
+		
+			_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+			if ((!(_TFenabled)) && !(FFG_TFEnabled)) then
+			{
+				titleText ["| Please enable Task Force Radio in your TS3 Plugins! | TS3 -> Settings -> Plugins |", "BLACK"];
+				FFG_TFEnabled = false;
+			};	
+
+			if ((_TFenabled) && (!(FFG_TFEnabled))) then 
+			{
+				titleText ["Plugin enabled, welcome back!","BLACK IN"];
+				FFG_TFEnabled = true;
+			};
+		};		
+		sleep 3;
+	};
+};
+
 [] spawn life_fnc_escInterupt;
 switch (playerSide) do
 {
