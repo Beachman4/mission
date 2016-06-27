@@ -720,7 +720,7 @@ life_garage_sell =
     ["tcg_hrly_demon",1750],
     ["tcg_hrly_limited",1750],
     ["tcg_hrly",1750],
-    ["C_Heli_Light_01_civil_F",150000]
+    ["C_Heli_Light_01_civil_F",0]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
 
