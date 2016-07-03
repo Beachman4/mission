@@ -1,31 +1,55 @@
 #include <macro.h>
-life_query_time = time;
+
 life_action_delay = time;
-life_trunk_vehicle = Objnull;
-life_session_completed = false;
+life_query_time = time;
+life_redgull_effect = time;
+life_action_inUse = false;
+life_action_in_use = false;
+life_bail_paid = false;
+life_bank_fail = false;
+life_delivery_in_progress = false;
+life_frozen = false;
 life_garage_store = false;
-life_session_tries = 0;
+life_god = false;
+life_hit_explosive = false;
+life_impound_inuse = false;
+life_interrupted = false;
+life_is_arrested = false;
+life_is_processing = false;
+life_istazed = false;
+life_knockout = false;
+life_markers = false;
 life_net_dropped = false;
+life_removeWanted = false;
+life_respawned = false;
+life_session_completed = false;
+life_siren_active = false;
+life_stealth = false;
+life_use_atm = true;
+life_my_gang = ObjNull;
+life_spikestrip = ObjNull;
+life_trunk_vehicle = Objnull;
+life_carryWeight = 0;
+life_cash = 0;
+life_clothing_filter = 0;
+life_clothing_purchase = [-1,-1,-1,-1,-1];
+life_clothing_uniform = -1;
+life_hunger = 100;
+life_intox = 0.00;
+life_maxWeight = 40;
+life_maxWeightT = 40;
+life_respawn_timer = 5;
+life_session_tries = 0;
+life_thirst = 100;
+life_vehicles = [];
+
+bank_robber = [];
+goingtojail = true;
 news_broadcast_header_length = 60;
 news_broadcast_cost = 10;
 news_broadcast_cooldown = 1;
-life_hit_explosive = false;
-life_siren_active = false;
-life_clothing_filter = 0;
-life_clothing_uniform = -1;
-life_redgull_effect = time;
-life_is_processing = false;
-life_bail_paid = false;
-life_impound_inuse = false;
-life_action_inUse = false;
-life_spikestrip = ObjNull;
-life_respawn_timer = 4;
-life_knockout = false;
-life_interrupted = false;
 sound_faded = false;
-life_respawned = false;
-goingtojail = true;
-life_removeWanted = false;
+
 __CONST__(life_save_civ,TRUE);
 __CONST__(life_save_yinv,TRUE);
 __CONST__(life_revive_cops,FALSE);
@@ -34,30 +58,11 @@ __CONST__(life_houseLimit,3);
 __CONST__(life_gangPrice,75000);
 __CONST__(life_gangUpgradeBase,10000);
 __CONST__(life_gangUpgradeMultipler,2.5);
-life_clothing_purchase = [-1,-1,-1,-1,-1];
-life_maxWeight = 40;
-life_maxWeightT = 40;
-life_carryWeight = 0;
-life_net_dropped = false;
-life_hit_explosive = false;
-life_siren_active = false;
-life_bank_fail = false;
-life_use_atm = true;
-life_is_arrested = false;
-life_delivery_in_progress = false;
-life_action_in_use = false;
-life_thirst = 100;
-life_hunger = 100;
-life_intox = 0.00;
 __CONST__(life_paycheck_period,30);
-life_cash = 0;
 __CONST__(life_impound_car,500);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,1000);
-life_istazed = false;
-life_my_gang = ObjNull;
-life_vehicles = [];
-bank_robber = [];
+
 switch (playerSide) do
 {
 	case west:
@@ -723,8 +728,3 @@ life_garage_sell =
     ["C_Heli_Light_01_civil_F",0]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
-
-life_god = false;
-life_frozen = false;
-life_markers = false;
-life_stealth = false;
