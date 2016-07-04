@@ -7,15 +7,6 @@ while {true} do
 
         _channels = ["TaskForce Radio", "SERT Training", "Requesting a Staff Member", "Room One", "Room Two", "Room Three", "Room Four", "Work Room [DND SA+](Desc.)", "Developer Offices"];
         _currentChannel = [] call TFAR_fnc_getTeamSpeakChannelName;
-        /*_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel2 = "SERT Training" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel3 = "Requesting a Staff Member" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel4 = "Room One" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel5 = "Room Two" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel6 = "Room Three" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel7 = "Room Four" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel8 = "Work Room [DND SA+](Desc.)" == (call TFAR_fnc_getTeamSpeakChannelName);
-        _onChannel9 = "Developer Offices" == (call TFAR_fnc_getTeamSpeakChannelName);*/
         if (!(_currentChannel in _channels))  then
         {
             titleText ["| Please reload your TaskForce Radio Plugin (teamspeak) to join the TFR channel | Settings -> Plugins -> Reload All |", "BLACK"];
