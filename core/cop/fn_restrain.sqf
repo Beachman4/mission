@@ -8,12 +8,12 @@
 private["_cop","_player"];
 _cop = param[0];
 _player = player;
-if (_cop != "Jailed Bruh") then {
+if (typeName _cop != "STRING") then {
 	if(isNull _cop) exitWith {};
 };
 
 //Monitor excessive restrainment
-if (_cop == "Jailed Bruh") then {
+if (typeName _cop != "STRING") then {
 	[] spawn
 	{
 		private["_time"];
@@ -34,7 +34,7 @@ if (_cop == "Jailed Bruh") then {
 	};
 };
 
-if (_cop == "Jailed Bruh") then {
+if (typeName _cop == "STRING") then {
 	titleText[format[localize "STR_Cop_Retrained","Jailed Bruh"],"PLAIN"];
 } else {
 	titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
@@ -59,7 +59,7 @@ while {player getVariable "restrained"} do
 		detach _player;
 	};
 
-	if (_cop != "Jailed Bruh") then {
+	if (typeName _cop != "STRING") then {
 
 		if(!alive _cop) exitWith {
 			player setVariable ["Escorting",false,true];
