@@ -30,29 +30,6 @@ waitUntil {life_session_completed};
 0 cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
 
-if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
-
-	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
-	999999 cutFadeOut 99999999;
-
-};
-
-_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
-
-if (!(_TFenabled)) then {
-
-	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do
-	{
-		titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
-		sleep 2;
-	};
-};
-
-FFG_TFEnabled = true;
-FFG_onTsServer = "Fast Forward Gaming" == (call TFAR_fnc_getTeamSpeakServerName);
-FFG_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
-titleText ["Task Force Radio loaded succesfully","BLACK IN"];
-
 [] spawn FFG_fnc_checkTS;
 
 [] spawn life_fnc_escInterupt;

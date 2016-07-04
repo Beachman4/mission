@@ -4,13 +4,13 @@ fnc_arrestmenu = {
 	_unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 	personyouwanjail = _unit;
 	if(isNull _unit) exitWith {};
-	if(isNil "_unit") exitwith {}; 
-	if(!(_unit isKindOf "Man")) exitWith {}; 
+	if(isNil "_unit") exitwith {};
+	if(!(_unit isKindOf "Man")) exitWith {};
 	if(!isPlayer _unit) exitWith {};
 	if((_unit getVariable "life_is_arrested")) exitWith {["This person is already arrested!",20,"red"] call A3L_Fnc_Msg;};
-	if(!(_unit getVariable "restrained")) exitWith {["This person is not restrained!",20,"red"] call A3L_Fnc_Msg;}; 
-	if(!((side _unit) in [civilian,independent])) exitWith {}; 
-	if(isNull _unit) exitWith {}; 
+	if(!(_unit getVariable "restrained")) exitWith {["This person is not restrained!",20,"red"] call A3L_Fnc_Msg;};
+	if(!((side _unit) in [civilian,independent])) exitWith {};
+	if(isNull _unit) exitWith {};
 
 	_display = findDisplay 5546;
 	_nameofperson = _display displayCtrl 2200;
@@ -71,9 +71,15 @@ fnc_jailsetup = {
 	_minutes = parseNumber life_arrestMinutes;
 	_hours = floor (_minutes/60);
 	_minutes = _minutes % 60;
-	player setVariable["restrained",false,true];
+	//player setVariable["restrained",false,true];
 	player setVariable["Escorting",false,true];
 	player setVariable["transporting",false,true];
+	[] spawn {
+		player allowDamage false;
+		sleep 5;
+		[true, player] call life_fnc_restrainAction;
+		player allowDamage true;
+	};
 	life_is_arrested = true;
 	player forceWalk true;
 	player setVariable["life_is_arrested",true,true];
@@ -121,10 +127,10 @@ fnc_jailsetup = {
 			};
 		};
 	};
-		
+
 	_sexytext = parseText format["<t font='EtelkaNarrowMediumPro' color='#B20000' align='center' size='1.8'>%1</t>",life_arrestReason];
 	((uiNamespace getVariable "a3ljailtimer") displayCtrl 1101) ctrlSetStructuredText _sexytext;
-	
+
 	[0,_minutes,_hours,0] spawn fnc_jailtimer;
 };
 
@@ -174,7 +180,7 @@ fnc_jailtimer = {
 
 	_sexytext = parseText format["<t font='EtelkaNarrowMediumPro' color='#B20000' align='center' size='1.8'>%1%2%3</t>",_hrtext,_mntext,_sectext];
 	((uiNamespace getVariable "a3ljailtimer") displayCtrl 1100) ctrlSetStructuredText _sexytext;
-    
+
     life_hunger = 100;
     life_thirst = 100;
 
@@ -195,16 +201,17 @@ fnc_releaseprison = {
 	player forceWalk false;
 	player setVariable["life_is_arrested",false,true];
 	[[player],"svr_releaseprison",false,false] spawn life_fnc_MP;
+	player setVariable["restrained",false,true];
 	if (_release == 1) then {
-		
-		if (isNil "A3L_Fnc_OldUniform") then 
+
+		if (isNil "A3L_Fnc_OldUniform") then
 		{
 			player addUniform "A3LShirt";
 		} else
 		{
 			player addUniform A3L_Fnc_OldUniform;
 		};
-		
+
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		("A3LJAILTIME" call BIS_fnc_rscLayer) cutText ["","PLAIN"]; //remove

@@ -6,31 +6,40 @@
 	Retrains the client.
 */
 private["_cop","_player"];
-_cop = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+_cop = param[0];
 _player = player;
-if(isNull _cop) exitWith {};
+if (_cop != "Jailed Bruh") then {
+	if(isNull _cop) exitWith {};
+};
 
 //Monitor excessive restrainment
-[] spawn
-{
-	private["_time"];
-	while {true} do
+if (_cop == "Jailed Bruh") then {
+	[] spawn
 	{
-		_time = time;
-		waitUntil {(time - _time) > (15 * 60)};
+		private["_time"];
+		while {true} do
+		{
+			_time = time;
+			waitUntil {(time - _time) > (15 * 60)};
 
-		if(!(player getVariable["restrained",FALSE])) exitWith {};
-		if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith {
-			player setVariable["restrained",FALSE,TRUE];
-			player setVariable["Escorting",FALSE,TRUE];
-			player setVariable["transporting",false,true];
-			detach player;
-			titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
+			if(!(player getVariable["restrained",FALSE])) exitWith {};
+			if(!([west,getPos player,30] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith {
+				player setVariable["restrained",FALSE,TRUE];
+				player setVariable["Escorting",FALSE,TRUE];
+				player setVariable["transporting",false,true];
+				detach player;
+				titleText[localize "STR_Cop_ExcessiveRestrain","PLAIN"];
+			};
 		};
 	};
 };
 
-titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+if (_cop == "Jailed Bruh") then {
+	titleText[format[localize "STR_Cop_Retrained","Jailed Bruh"],"PLAIN"];
+} else {
+	titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+};
+
 [[player,"Cuffed"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 
 while {player getVariable "restrained"} do
@@ -50,9 +59,12 @@ while {player getVariable "restrained"} do
 		detach _player;
 	};
 
-	if(!alive _cop) exitWith {
-		player setVariable ["Escorting",false,true];
-		detach player;
+	if (_cop != "Jailed Bruh") then {
+
+		if(!alive _cop) exitWith {
+			player setVariable ["Escorting",false,true];
+			detach player;
+		};
 	};
 
 	if(vehicle player != player) then

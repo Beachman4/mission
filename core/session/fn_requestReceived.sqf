@@ -54,10 +54,11 @@ switch(playerSide) do {
 			[] spawn life_fnc_initGang;
 		};
 		[] spawn life_fnc_initHouses;
-		/*if (parseNumber(life_arrestMinutes) > 0) then {
-			[false,false,life_arrestMinutes,life_arrestReason] call fnc_jailsetup;
-			goingtojail = true;
-		};*/
+		if (parseNumber(life_arrestMinutes) > 0) then {
+			life_is_arrested = true;
+		} else {
+			life_is_arrested = false;
+		};
 	};
 
 
