@@ -77,7 +77,9 @@ fnc_jailsetup = {
 	[] spawn {
 		player allowDamage false;
 		sleep 5;
-		[true, player] call life_fnc_restrainAction;
+		player say3D "cuff";
+		player setVariable["restrained",true,true];
+		[["Jailed Bruh"], "life_fnc_restrain",player, false] spawn life_fnc_MP;
 		player allowDamage true;
 	};
 	life_is_arrested = true;
