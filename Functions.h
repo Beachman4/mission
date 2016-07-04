@@ -57,6 +57,7 @@ class FFG_Client_Core
         class hideObject {};
         class hudSetup {};
         class hud {};
+        class checkTS {};
     };
 };
 
