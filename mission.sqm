@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5436.5679,63.291576,4314.5054};
-		dir[]={-0.32026339,-0.60709912,0.72738236};
-		up[]={-0.24466929,0.79457933,0.5556953};
-		aside[]={0.91532016,-1.4532998e-007,0.40300587};
+		pos[]={3482.074,60.842567,3105.9795};
+		dir[]={0.97086287,-0.19188035,-0.1436027};
+		up[]={0.18982127,0.98141652,-0.028076908};
+		aside[]={-0.14632113,1.4086254e-007,-0.98924416};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"A3L_Store",
 	"A3L_savepoint",
 	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil",
 	"cba_xeh_a3",
 	"Unlocked_Uniforms",
 	"A3_Modules_F",
@@ -126,7 +127,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -142,14 +143,14 @@ class AddonsMetaData
 		class Item2
 		{
 			className="A3_Missions_F_Beta";
-			name="Arma 3 Beta - Playable content";
+			name="Arma 3 Beta - Playable Content";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Structures_F_Ind";
-			name="Arma 3 Alpha - Industry complexes";
+			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -163,14 +164,14 @@ class AddonsMetaData
 		class Item5
 		{
 			className="A3_Structures_F";
-			name="Arma 3 Alpha - Buildings and structures";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item6
 		{
 			className="A3_Structures_F_EPC";
-			name="Arma 3 Win Episode - Buildings and structures";
+			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -222,290 +223,297 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item16
+		{
 			className="cba_xeh_a3";
 			name="cba_xeh_a3";
 		};
-		class Item16
+		class Item17
 		{
 			className="Unlocked_Uniforms";
 			name="Unlocked_Uniforms";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3L_HospitalBed";
 			name="A3L_HospitalBed";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Structures_F_Households";
-			name="Arma 3 Alpha - Houses";
+			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3L_MainBank";
 			name="A3L_MainBank";
 		};
-		class Item21
+		class Item22
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
 		};
-		class Item22
+		class Item23
 		{
 			className="mm_bank";
 			name="mm_bank";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3L_Tarmac";
 			name="A3L_Tarmac";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3L_KartIndoor";
 			name="A3L_KartIndoor";
 		};
-		class Item28
+		class Item29
 		{
 			className="mm_showroom";
 			name="mm_showroom";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3L_ObjectsOnSteroids";
 			name="A3L_ObjectsOnSteroids";
 		};
-		class Item30
+		class Item31
 		{
 			className="jerseybarrier";
 			name="jerseybarrier";
 		};
-		class Item31
+		class Item32
 		{
 			className="xCam_EU";
 			name="xCam_EU";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3L_Prison_Gates";
 			name="A3L_Prison_Gates";
 		};
-		class Item33
+		class Item34
 		{
 			className="Gate_C";
 			name="Gate_C";
 		};
-		class Item34
+		class Item35
 		{
 			className="mm_buildings";
 			name="mm_buildings";
 		};
-		class Item35
+		class Item36
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item36
+		class Item37
 		{
 			className="DED_Simple_01";
 			name="DED_Simple_01";
 		};
-		class Item37
+		class Item38
 		{
 			className="DED_Taco_01";
 			name="DED_Taco_01";
 		};
-		class Item38
+		class Item39
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item39
+		class Item40
 		{
 			className="CUP_ibr_plants";
 			name="CUP_ibr_plants";
 		};
-		class Item40
+		class Item41
 		{
 			className="A3_Trees";
 			name="A3_Trees";
 		};
-		class Item41
+		class Item42
 		{
 			className="MBG_Buildings_3";
 			name="MBG_Buildings_3";
 		};
-		class Item42
+		class Item43
 		{
 			className="DED_Shop_01";
 			name="DED_Shop_01";
 		};
-		class Item43
+		class Item44
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item44
+		class Item45
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item45
+		class Item46
 		{
 			className="rz_dunkinbronuts";
 			name="rz_dunkinbronuts";
 		};
-		class Item46
+		class Item47
 		{
 			className="E76_buildingstower";
 			name="E76_buildingstower";
 		};
-		class Item47
+		class Item48
 		{
 			className="A_BuildingWIP";
 			name="A_BuildingWIP";
 		};
-		class Item48
+		class Item49
 		{
 			className="Jbad_misc_market";
 			name="Jbad_misc_market";
 		};
-		class Item49
+		class Item50
 		{
 			className="Gaol_MapObject";
 			name="Gaol_MapObject";
 		};
-		class Item50
+		class Item51
 		{
 			className="mil";
 			name="mil";
 		};
-		class Item51
+		class Item52
 		{
 			className="A3L_Factory";
 			name="A3L_Factory";
 		};
-		class Item52
+		class Item53
 		{
 			className="DED_Fence_01";
 			name="DED_Fence_01";
 		};
-		class Item53
+		class Item54
 		{
 			className="DED_Ranch_01";
 			name="DED_Ranch_01";
 		};
-		class Item54
+		class Item55
 		{
 			className="A3L_Ford_Raptor";
 			name="A3L_Ford_Raptor";
 		};
-		class Item55
+		class Item56
 		{
 			className="cg_audi_r8_plus";
 			name="cg_audi_r8_plus";
 		};
-		class Item56
+		class Item57
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item57
+		class Item58
 		{
 			className="buildings_misc";
 			name="buildings_misc";
 		};
-		class Item58
+		class Item59
 		{
 			className="HouseA";
 			name="HouseA";
 		};
-		class Item59
+		class Item60
 		{
 			className="HouseDoubleAL";
 			name="HouseDoubleAL";
 		};
-		class Item60
+		class Item61
 		{
 			className="HouseStudsDouble";
 			name="HouseStudsDouble";
 		};
-		class Item61
+		class Item62
 		{
 			className="A_stationhouse";
 			name="A_stationhouse";
 		};
-		class Item62
+		class Item63
 		{
 			className="afghan_houses_c";
 			name="afghan_houses_c";
 		};
-		class Item63
+		class Item64
 		{
 			className="afghan_houses";
 			name="afghan_houses";
 		};
-		class Item64
+		class Item65
 		{
 			className="afghan_houses_old";
 			name="afghan_houses_old";
 		};
-		class Item65
+		class Item66
 		{
 			className="CUP_Shed_wooden";
 			name="CUP_Shed_wooden";
 		};
-		class Item66
+		class Item67
 		{
 			className="RZ_RoadsTunnel";
 			name="RZ_RoadsTunnel";
 		};
-		class Item67
+		class Item68
 		{
 			className="A3L_PrisonWall";
 			name="A3L_PrisonWall";
 		};
-		class Item68
+		class Item69
 		{
 			className="A3_Structures_F_Heli";
-			name="Arma 3 Helicopters - Buildings and structures";
+			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item69
+		class Item70
 		{
 			className="dar_ilpdsert";
 			name="dar_ilpdsert";
 		};
-		class Item70
+		class Item71
 		{
 			className="PoliceStation";
 			name="PoliceStation";
@@ -572,7 +580,7 @@ class Mission
 			type="Empty";
 			angle=1.1873838;
 			id=5;
-			atlOffset=0.00085449219;
+			atlOffset=0.00084877014;
 		};
 		class Item3
 		{
@@ -1236,23 +1244,23 @@ class Mission
 		class Item61
 		{
 			dataType="Marker";
-			position[]={4181.8125,9.6225586,2305.4478};
+			position[]={4180.5508,1.2407676e+019,2306.4121};
 			name="cop_ship_1";
 			type="Empty";
-			angle=126.99556;
+			angle=126.99599;
 			id=91;
-			atlOffset=28.402224;
+			atlOffset=1.2407676e+019;
 		};
 		class Item62
 		{
 			dataType="Marker";
-			position[]={4179.5903,4.6396484,2306.2769};
+			position[]={4183.2246,4.6396484,2305.9058};
 			name="civ_ship_1";
 			text="Boat Spawn";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorOrange";
 			id=92;
-			atlOffset=24.643072;
+			atlOffset=22.623343;
 		};
 		class Item63
 		{
@@ -1368,7 +1376,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=1.688634;
 			id=107;
-			atlOffset=83.990982;
+			atlOffset=90.001083;
 		};
 		class Item73
 		{
@@ -5417,6 +5425,7 @@ class Mission
 						angles[]={0,4.8543892,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5425,7 +5434,7 @@ class Mission
 					};
 					id=594;
 					type="C_man_polo_3_F";
-					atlOffset=0.66647243;
+					atlOffset=0.11354542;
 				};
 				class Item3
 				{
@@ -6341,7 +6350,6 @@ class Mission
 						angles[]={6.2826972,0.90190738,0.00059801998};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -6349,7 +6357,7 @@ class Mission
 					};
 					id=652;
 					type="C_man_1";
-					atlOffset=0.11082458;
+					atlOffset=1.3323936;
 				};
 				class Item45
 				{
@@ -9118,7 +9126,6 @@ class Mission
 			};
 			id=1382;
 			type="Land_InfoStand_V1_F";
-			atlOffset=1.9073486e-006;
 		};
 		class Item311
 		{
@@ -9653,7 +9660,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_1""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_1""];";
 				name="stash3";
 			};
 			id=1753;
@@ -9713,7 +9720,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_1""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_1""];";
 				name="stash1";
 			};
 			id=1754;
@@ -9773,7 +9780,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_1""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_1""];";
 				name="stash4";
 			};
 			id=1755;
@@ -9833,7 +9840,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_1""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_1""];";
 				name="stash2";
 			};
 			id=1756;
@@ -10889,7 +10896,7 @@ class Mission
 					};
 					id=2451;
 					type="C_man_p_beggar_F";
-					atlOffset=0.00011730194;
+					atlOffset=0.018551826;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10938,7 +10945,7 @@ class Mission
 			{
 			};
 			id=2450;
-			atlOffset=0.00011730194;
+			atlOffset=0.018551826;
 		};
 		class Item396
 		{
@@ -11689,7 +11696,7 @@ class Mission
 			text="Police HQ";
 			type="A3L_PD_Icon";
 			colorName="ColorBlack";
-			angle=1.7162358;
+			angle=1.7162356;
 			id=2594;
 		};
 		class Item425
@@ -15787,7 +15794,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6519.2363,31.116022,5845.3853};
+				position[]={6519.2363,31.116024,5845.3853};
 				angles[]={0,5.0015831,0};
 			};
 			side="Empty";
@@ -15797,14 +15804,14 @@ class Mission
 			};
 			id=3388;
 			type="Land_Mil_WiredFence_Gate_F";
-			atlOffset=2.2888184e-005;
+			atlOffset=0.00080490112;
 		};
 		class Item658
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6507.8076,31.445845,5807.5449};
+				position[]={6507.8076,31.445847,5807.5449};
 				angles[]={0,5.0015903,0};
 			};
 			side="Empty";
@@ -15815,7 +15822,7 @@ class Mission
 			};
 			id=3389;
 			type="Land_Mil_WiredFence_Gate_F";
-			atlOffset=2.0980835e-005;
+			atlOffset=0.00080299377;
 		};
 		class Item659
 		{
@@ -16692,7 +16699,7 @@ class Mission
 			};
 			id=3438;
 			type="Land_Mil_WiredFence_Gate_F";
-			atlOffset=2.2888184e-005;
+			atlOffset=0.00080299377;
 		};
 		class Item708
 		{
@@ -84932,7 +84939,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_2""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_2""];";
 				name="stash5";
 			};
 			id=13323;
@@ -84992,7 +84999,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_2""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_2""];";
 				name="stash6";
 			};
 			id=13324;
@@ -85111,7 +85118,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_3""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_3""];";
 				name="stash9";
 			};
 			id=13335;
@@ -85171,7 +85178,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_3""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_3""];";
 				name="stash7";
 			};
 			id=13336;
@@ -85231,7 +85238,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_3""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_3""];";
 				name="stash8";
 			};
 			id=13337;
@@ -85291,7 +85298,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==""civilian""'];this setVariable [""bank"", ""bank_3""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this,0,false,false,"""",'playerSide ==civilian'];this setVariable [""bank"", ""bank_3""];";
 				name="stash10";
 			};
 			id=13338;
@@ -97157,12 +97164,13 @@ class Mission
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=14931;
 			type="CUP_A1_Panelak2";
-			atlOffset=4.6230011;
+			atlOffset=0.14662647;
 		};
 		class Item4576
 		{
@@ -97173,12 +97181,13 @@ class Mission
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=14932;
 			type="CUP_A1_Panelak2";
-			atlOffset=4.6230011;
+			atlOffset=0.14662647;
 		};
 		class Item4577
 		{
@@ -97189,12 +97198,13 @@ class Mission
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=14935;
 			type="CUP_A1_Panelak3";
-			atlOffset=0.8560009;
+			atlOffset=-0.20429134;
 		};
 		class Item4578
 		{
@@ -97205,12 +97215,13 @@ class Mission
 				angles[]={0,3.1437395,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=14936;
 			type="CUP_A1_Panelak2";
-			atlOffset=4.6230011;
+			atlOffset=0.14662647;
 		};
 		class Item4579
 		{
@@ -97221,12 +97232,13 @@ class Mission
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=14937;
 			type="CUP_A1_Panelak2";
-			atlOffset=4.6230011;
+			atlOffset=0.14662647;
 		};
 		class Item4580
 		{
@@ -97734,12 +97746,12 @@ class Mission
 				position[]={4260.9063,16.394159,3326.9014};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15039;
 			type="Land_Shed_wooden";
+			atlOffset=1.3941593;
 		};
 		class Item4612
 		{
@@ -100794,12 +100806,12 @@ class Mission
 				angles[]={0,1.6672668,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15313;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -100913,13 +100925,12 @@ class Mission
 				angles[]={0,1.6672668,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15316;
 			type="Land_arrows_yellow_R";
-			atlOffset=0.067400932;
+			atlOffset=0.83643246;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101032,12 +101043,12 @@ class Mission
 				angles[]={0,1.6672668,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15319;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101150,12 +101161,12 @@ class Mission
 				angles[]={0,3.2443347,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15325;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101268,12 +101279,12 @@ class Mission
 				angles[]={0,4.7167945,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15328;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101347,13 +101358,12 @@ class Mission
 				angles[]={0,0.12705997,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15331;
 			type="Land_arrows_yellow_R";
-			atlOffset=9.5367432e-007;
+			atlOffset=0.76903248;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101466,12 +101476,12 @@ class Mission
 				angles[]={0,0.11124318,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15334;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101662,12 +101672,12 @@ class Mission
 				angles[]={0,1.6672668,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15340;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101741,12 +101751,12 @@ class Mission
 				angles[]={0,0.12864579,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15343;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101859,12 +101869,12 @@ class Mission
 				angles[]={0,0.22142956,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15346;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -101977,12 +101987,12 @@ class Mission
 				angles[]={0,0.19974357,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15352;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -102754,12 +102764,12 @@ class Mission
 				angles[]={0,4.7167945,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15415;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -102872,12 +102882,12 @@ class Mission
 				angles[]={0,4.7167945,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15418;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -103270,12 +103280,12 @@ class Mission
 				angles[]={0,1.6672668,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15452;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -103387,12 +103397,12 @@ class Mission
 				angles[]={0,3.2460966,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=15455;
 			type="Land_arrows_yellow_R";
+			atlOffset=0.76903152;
 			class CustomAttributes
 			{
 				class Attribute0
