@@ -121,4 +121,5 @@ switch (_var) do
 	case "license_civ_home": {(localize "STR_License_Home")};
 	
 	case "license_civ_rifle": {"Rifle License"};
+	case "license_cop_civShop": {"Civ Shop License"};
 };

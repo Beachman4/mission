@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3482.074,60.842567,3105.9795};
-		dir[]={0.97086287,-0.19188035,-0.1436027};
-		up[]={0.18982127,0.98141652,-0.028076908};
-		aside[]={-0.14632113,1.4086254e-007,-0.98924416};
+		pos[]={4743.3179,21.828392,2886.0024};
+		dir[]={-0.14097418,-0.22800349,-0.96342343};
+		up[]={-0.033013884,0.97365403,-0.22561613};
+		aside[]={-0.98948014,2.8737122e-007,0.14478555};
 	};
 };
 binarizationWanted=0;
@@ -586,7 +586,7 @@ class Mission
 			type="Empty";
 			angle=1.1873838;
 			id=5;
-			atlOffset=0.00084877014;
+			atlOffset=0.00086402893;
 		};
 		class Item3
 		{
@@ -1253,7 +1253,7 @@ class Mission
 			position[]={4179.3345,1.2407676e+019,2306.9526};
 			name="cop_ship_1";
 			type="Empty";
-			angle=126.99599;
+			angle=126.99598;
 			id=91;
 			atlOffset=1.2407676e+019;
 		};
@@ -11612,18 +11612,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4744.1221,19.41283,2878.5139};
-						angles[]={0,0.055622399,0};
+						position[]={4744.1221,19.412437,2878.5142};
+						angles[]={0,0.055623643,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						init="this allowdamage false;  this enablesimulation false;  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TCG_PDDTC"";  this addVest ""CID_Vest"";  this addBackpack ""FFG_PoliceBeltINV"";  this addHeadgear ""H_Cap_blk""; this addGoggles ""G_mas_wpn_gog_d"";  this addAction[""Sign-In Evidence"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this setVariable[""realname"",""Evidence Technician""];";
+						init="this allowdamage false;  this enablesimulation false;  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;  this forceAddUniform ""TCG_PDDTC"";  this addVest ""CID_Vest"";  this addBackpack ""FFG_PoliceBeltINV"";  this addHeadgear ""H_Cap_blk""; this addGoggles ""G_mas_wpn_gog_d"";  this addAction[""Sign-In Evidence"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this setVariable[""realname"",""Evidence Technician""];this addAction[format[""%1 ($%2)"",[""license_cop_civShop""] call life_fnc_varToStr,[([""civShop""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""civShop"",0,false,false,"""",' !license_cop_civShop && playerSide == west '];";
 					};
 					id=2588;
 					type="B_RangeMaster_F";
-					atlOffset=0.19892883;
+					atlOffset=0.19853592;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11653,7 +11653,7 @@ class Mission
 			{
 			};
 			id=2587;
-			atlOffset=0.19892883;
+			atlOffset=0.19853592;
 		};
 		class Item420
 		{
@@ -11702,7 +11702,7 @@ class Mission
 			text="Police HQ";
 			type="A3L_PD_Icon";
 			colorName="ColorBlack";
-			angle=1.7162356;
+			angle=1.7162355;
 			id=2594;
 		};
 		class Item425

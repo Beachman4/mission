@@ -35,6 +35,6 @@ switch (_type) do
 	case "cement": {200};
 	case "mair": {10};
 	case "home": {7500};
-	case "civShop": {10000};
+	case "civShop": {10000}; // Cop civ shop license cost
 	case "rifle": {50000};
 };
