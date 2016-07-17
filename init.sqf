@@ -10,6 +10,12 @@ if (isServer) then {
 	stash2 setvariable ["robbed",false,true];
 	stash3 setvariable ["robbed",false,true];
 	stash4 setvariable ["robbed",false,true];
+    stash5 setvariable ["robbed",false,true];
+	stash6 setvariable ["robbed",false,true];
+	stash7 setvariable ["robbed",false,true];
+	stash8 setvariable ["robbed",false,true];
+    stash9 setvariable ["robbed",false,true];
+	stash10 setvariable ["robbed",false,true];
 };
 enableSaving[false,false];
 

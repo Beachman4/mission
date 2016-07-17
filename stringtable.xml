@@ -3452,7 +3452,7 @@
             <German>Sie haben in den Kopfhörern stellen, Ton um 90% reduziert.</German>
             <French>Vous avez mis dans des écouteurs, des émissions sonores réduites de 90%.</French>
             <Italian>Hai messo in auricolari, sano ridotti del 90%.</Italian>
-            <Portuguese>Você colocar em fones de ouvido, som reduzido em 90%.</Prtuguese>
+            <Portuguese>Você colocar em fones de ouvido, som reduzido em 90%.</Portuguese>
             <Russian>Вы поставили в наушниках, звук уменьшается на 90%.</Russian>
         </Key>
         <Key ID="STR_Sound_Return">
@@ -4813,7 +4813,6 @@
 			<Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
 		</Key>
 	</Package>
-		</Package>
 	<Package name="Gather_Items">
 		<Key ID="STR_Gather_Apples">
 			<Original>Plant seeds</Original>
