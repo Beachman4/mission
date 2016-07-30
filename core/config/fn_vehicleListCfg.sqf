@@ -21,6 +21,10 @@ switch (_shop) do
 			["Jonzie_Ambulance_Fire_Department",10],
             ["Jonzie_Ambulance_EMS",10],
 			["A3L_Taurus_EMSHC_LB",10],
+<<<<<<< HEAD
+=======
+            ["Urbanized_LP700_EMS",10],
+>>>>>>> origin/master
 			["A3L_ExplorerEMS_P",10],
 			["A3L_ExplorerEMS_S",10],
 			["ffg_f350", 10],
@@ -328,6 +332,10 @@ switch (_shop) do
 			["A3L_Taurus_Sheriff_LB",10],
             ["A3L_Taurus_Sheriff_Slick",10],
 			["A3L_Charger_DTU",10],
+<<<<<<< HEAD
+=======
+            ["A3L_Charger_Patrol",10],
+>>>>>>> origin/master
 			["DAR_ExplorerPolice",10],
 			["cg_suburban_sert_pol",10]
 		];
@@ -351,7 +359,10 @@ switch (_shop) do
                 ["A3L_CVPIUC_Grey",10],
                 ["A3L_CVPIUC_Red",10],
                 ["A3L_CVPIUC_White",10],
+<<<<<<< HEAD
 				["A3L_Charger_DTUSupervisor",10],
+=======
+>>>>>>> origin/master
                 ["Ivory_isf_unmarked",10]
             ];
         };
