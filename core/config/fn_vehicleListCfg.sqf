@@ -18,8 +18,10 @@ switch (_shop) do
 	{
 		_return = [
 			["A3L_CVPILBFD",10],
-			["Jonzie_Ambulance",10],
-			["A3L_AmberLamps",10],
+			["Jonzie_Ambulance_Fire_Department",10],
+            ["Jonzie_Ambulance_EMS",10],
+			["A3L_Taurus_EMSHC_LB",10],
+            ["Urbanized_LP700_EMS",10],
 			["A3L_ExplorerEMS_P",10],
 			["A3L_ExplorerEMS_S",10],
 			["ffg_f350", 10],
@@ -322,13 +324,12 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["DAR_CVPIPolice",10],
-			["DAR_CVPISlick",10],
-			["DAR_TaurusPolice",10],
-			["DAR_ImpalaPolice",10],
-			["DAR_ImpalaPoliceSlick",10],
-			["DAR_ChargerPolice",10],
-			["DAR_ImpalaPoliceDet",10],
+			["A3L_CVPI_Sheriff_LB",10],
+			["A3L_CVPI_Sheriff_Slick",10],
+			["A3L_Taurus_Sheriff_LB",10],
+            ["A3L_Taurus_Sheriff_Slick",10],
+			["A3L_Charger_DTU",10],
+            ["A3L_Charger_Patrol",10],
 			["DAR_ExplorerPolice",10],
 			["cg_suburban_sert_pol",10]
 		];
@@ -338,16 +339,21 @@ switch (_shop) do
         if(__GETC__(life_coplevel) >= 1) then {
             _return =
             [
-                ["A3L_TaurusCO2",10],
-                ["A3L_TaurusUCBlack",10],
-                ["A3L_TaurusUCGrey",10],
-                ["A3L_TaurusUCWhite",10],
-                ["A3L_TaurusUCBlue",10],
-                ["A3L_TaurusUCRed",10],
-                ["A3L_CVPIGrey",10],
-                ["A3L_CVPIUCRed",10],
-                ["A3L_CVPIUCPink",10],
-                ["A3L_CVPIUCBlue",10]
+                ["A3L_TaurusUC_Black",10],
+                ["A3L_TaurusUC_Blue",10],
+                ["A3L_TaurusUC_Grey",10],
+                ["A3L_TaurusUC_White",10],
+                ["A3L_TaurusUC_Red",10],
+                ["A3L_ChargerUC_Black_New",10],
+                ["A3L_ChargerUC_White_New",10],
+                ["A3L_ChargerUC_Blue_New",10],
+                ["A3L_CVPIUC_Black",10],
+                ["A3L_CVPIUC_Blue",10],
+                ["A3L_CVPIUC_Pink",10],
+                ["A3L_CVPIUC_Grey",10],
+                ["A3L_CVPIUC_Red",10],
+                ["A3L_CVPIUC_White",10],
+                ["Ivory_isf_unmarked",10]
             ];
         };
     };
