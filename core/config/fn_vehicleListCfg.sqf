@@ -23,7 +23,6 @@ switch (_shop) do
 			["A3L_Taurus_EMSHC_LB",10],
 <<<<<<< HEAD
 =======
-            ["Urbanized_LP700_EMS",10],
 >>>>>>> origin/master
 			["A3L_ExplorerEMS_P",10],
 			["A3L_ExplorerEMS_S",10],
@@ -334,7 +333,6 @@ switch (_shop) do
 			["A3L_Charger_DTU",10],
 <<<<<<< HEAD
 =======
-            ["A3L_Charger_Patrol",10],
 >>>>>>> origin/master
 			["DAR_ExplorerPolice",10],
 			["cg_suburban_sert_pol",10]
