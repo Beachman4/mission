@@ -339,7 +339,7 @@ switch (_shop) do
 	};
     case "det_car":
     {
-        if(__GETC__(life_coplevel) >= 1) then {
+        if(__GETC__(life_coplevel) >= 2) then {
             _return =
             [
                 ["A3L_TaurusUC_Black",10],
@@ -363,7 +363,7 @@ switch (_shop) do
     };
 	case "sert_car":
 	{
-        if(__GETC__(life_coplevel) >= 1) then {
+        if(__GETC__(life_coplevel) >= 2) then {
             _return =
             [
                 ["A3L_CVPIUCSERT",10],
@@ -377,7 +377,7 @@ switch (_shop) do
 	};
     case "sert_air":
     {
-        if(__GETC__(life_coplevel) >= 1) then {
+        if(__GETC__(life_coplevel) >= 2) then {
             _return =
             [
                 ["I_Heli_Transport_02_F",10],

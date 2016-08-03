@@ -525,7 +525,14 @@ life_garage_prices =
 	["A3L_SuburbanCSO",0],
 	["A3L_SuburbanFG",0],
 	["M1030",0],
-	["B_MRAP_01_F",7500]
+	["B_MRAP_01_F",7500],
+	["A3L_Charger_DTU",0],
+	["A3L_Charger_Patrol",0],
+	["A3L_ChargerUC_Black_New",0],
+	["A3L_ChargerUC_White_New",0],
+	["A3L_ChargerUC_Blue_New",0],
+	["A3L_Charger_DTUSupervisor",0],
+	["A3L_Charger_SERTGrey",0]
 
 
 ];
@@ -726,6 +733,13 @@ life_garage_sell =
     ["tcg_hrly_demon",1750],
     ["tcg_hrly_limited",1750],
     ["tcg_hrly",1750],
-    ["C_Heli_Light_01_civil_F",0]
+    ["C_Heli_Light_01_civil_F",0],
+	["A3L_Charger_DTU",0],
+	["A3L_Charger_Patrol",0],
+	["A3L_ChargerUC_Black_New",0],
+	["A3L_ChargerUC_White_New",0],
+	["A3L_ChargerUC_Blue_New",0],
+	["A3L_Charger_DTUSupervisor",0],
+	["A3L_Charger_SERTGrey",0]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
