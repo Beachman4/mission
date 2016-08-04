@@ -21,10 +21,6 @@ switch (_shop) do
 			["Jonzie_Ambulance_Fire_Department",10],
             ["Jonzie_Ambulance_EMS",10],
 			["A3L_Taurus_EMSHC_LB",10],
-<<<<<<< HEAD
-=======
-			["Urbanized_LP700_EMS",10],
->>>>>>> origin/master
 			["A3L_ExplorerEMS_P",10],
 			["A3L_ExplorerEMS_S",10],
 			["ffg_f350", 10],
