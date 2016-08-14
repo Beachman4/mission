@@ -29,9 +29,7 @@ waitUntil{!isNil "life_server_isReady"};
 waitUntil {life_session_completed};
 0 cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
-
-[] spawn FFG_fnc_checkTS;
-
+    
 [] spawn life_fnc_escInterupt;
 switch (playerSide) do
 {
@@ -82,6 +80,11 @@ waitUntil {!(isNull (findDisplay 46))};
 life_sidechat = true;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 0 cutText ["","BLACK IN"];
+
+if (__GETC__(life_adminlevel) == 0) then {
+    [] spawn FFG_fnc_checkTS;
+}
+
 //[] call life_fnc_hudSetup;
 [] call FFG_fnc_hudSetup;
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
