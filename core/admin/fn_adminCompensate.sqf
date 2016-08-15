@@ -12,7 +12,7 @@ _cantdothat = false;
 _value = parseNumber(ctrlText 9922);
 _reason = ctrlText 9923;
 if (FETCH_CONST(life_adminlevel) == 3) then {
-    if (_value > 50000) exitWith {
+    if (_value > 100000) exitWith {
     	_cantdothat = true;
         hint "You can't give out that much!";
         closeDialog 0;

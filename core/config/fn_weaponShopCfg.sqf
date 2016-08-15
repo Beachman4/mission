@@ -66,7 +66,7 @@ switch(_shop) do
         };
         case "cop_sert":
         {
-            if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};*/
+            if (__GETC__(life_coplevel) < 2) exitWith {hint "You are not high enough cop level."; closeDialog 0;};
             switch (true) do
             {
                 case (playerSide != west): {"You are not a police officer"};
