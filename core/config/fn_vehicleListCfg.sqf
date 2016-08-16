@@ -151,6 +151,7 @@ switch (_shop) do
 			["A3L_SuburbanBlack",60000],
 			["A3L_SuburbanGrey",60000],
 			["A3L_SuburbanOrange",60000],
+			["A3L_Camaro",95000],
             ["D_Cobalt_White",40000],
             ["D_Cobalt_Blue",40000],
             ["D_Cobalt_Red",40000],

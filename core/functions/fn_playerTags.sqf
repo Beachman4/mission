@@ -50,11 +50,10 @@ _units = _units - [player];
 					}
 					else
 					{
-						if (goggles _x IN ["A3L_Balaclava","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","Masque_Alien1", "Masque_Anonymous", "Masque_Chains", "Payday_GeneralO", "Casque_Moto", "Masque_Clinton", "Masque_speedRunner", "Masque_Unic", "Masque_Aubrey", "Masque_Bonnie", "Masque_Bush", "Masque_Mempo", "Masque_Lincoln", "Masque_Wolfv2", "Masque_archNemesis", "Masque_Arnold", "Masque_Chuck", "Masque_Clover", "Masque_Fish", "Masque_Hockey", "Masque_Metalhead", "Masque_Religieuse", "Masque_Smiley", "Masque_Santa", "Masque_Momie", "Masque_Optimiste", "Masque_forceAlpha", "Masque_GdG", "Masque_Gombo", "Masque_Lion", "Masque_Orc", "Masque_Mark", "Masque_Macrilleuse", "Masque_Hoxton", "Masque_Incendiaire", "Masque_Dallas","kio_skl_msk_grn","kio_skl_msk_red","kio_skl_msk","jokermask","kio_vfv_mask"] or headgear _x IN ["A3L_Balaclava","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","Masque_Alien1", "Masque_Anonymous", "Masque_Chains", "Payday_GeneralO", "Casque_Moto", "Masque_Clinton", "Masque_speedRunner", "Masque_Unic", "Masque_Aubrey", "Masque_Bonnie", "Masque_Bush", "Masque_Mempo", "Masque_Lincoln", "Masque_Wolfv2", "Masque_archNemesis", "Masque_Arnold", "Masque_Chuck", "Masque_Clover", "Masque_Fish", "Masque_Hockey", "Masque_Metalhead", "Masque_Religieuse", "Masque_Smiley", "Masque_Santa", "Masque_Momie", "Masque_Optimiste", "Masque_forceAlpha", "Masque_GdG", "Masque_Gombo", "Masque_Lion", "Masque_Orc", "Masque_Mark", "Masque_Macrilleuse", "Masque_Hoxton", "Masque_Incendiaire", "Masque_Dallas","kio_skl_msk_grn","kio_skl_msk_red","kio_skl_msk","jokermask","kio_vfv_mask"]) then
+						if (goggles _x IN ["A3L_Balaclava","G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","Masque_Alien1", "Masque_Anonymous", "Masque_Chains", "Payday_GeneralO", "Casque_Moto", "Masque_Clinton", "Masque_speedRunner", "Masque_Unic", "Masque_Aubrey", "Masque_Bonnie", "Masque_Bush", "Masque_Mempo", "Masque_Lincoln", "Masque_Wolfv2", "Masque_archNemesis", "Masque_Arnold", "Masque_Chuck", "Masque_Clover", "Masque_Fish", "Masque_Hockey", "Masque_Metalhead", "Masque_Religieuse", "Masque_Smiley", "Masque_Santa", "Masque_Momie", "Masque_Optimiste", "Masque_forceAlpha", "Masque_GdG", "Masque_Gombo", "Masque_Lion", "Masque_Orc", "Masque_Mark", "Masque_Macrilleuse", "Masque_Hoxton", "Masque_Incendiaire", "Masque_Dallas","kio_skl_msk_grn","kio_skl_msk_red","kio_skl_msk","jokermask","kio_vfv_mask"]) then
 							{
 							format["<t color='#00FF00' font='EtelkaNarrowMediumPro'>Masked Person</t>"];
-							}
-							else
+							} else
 							{
 							format["<t color='#00FF00' font='EtelkaNarrowMediumPro'>%1</t>",(_x getVariable ["realname",name _x])];
 							};

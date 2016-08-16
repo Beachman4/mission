@@ -38,20 +38,8 @@ life_hunger = 100;
 life_intox = 0.00;
 life_maxWeight = 40;
 life_maxWeightT = 40;
-if({side _x == independent} count playableUnits >0) then
-{
-	life_respawn_timer = 5;
-}
-else{
-	if (side player == independent) then
-	{
-		life_respawn_timer = 2;
-	}
-	else
-	{
-		life_respawn_timer=2;
-	};
-};
+life_respawn_timer = 5;
+if (side player == independent) then {life_respawn_timer = 2;};
 life_session_tries = 0;
 life_thirst = 100;
 life_vehicles = [];

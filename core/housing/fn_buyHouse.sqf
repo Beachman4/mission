@@ -14,7 +14,7 @@ if(!(_house isKindOf "House_F")) exitWith {};
 if((_house getVariable["house_owned",false])) exitWith {hint "This house is already owned even though you shouldn't be seeing this hint..."};
 if(!isNil {(_house getVariable "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
 if(!license_civ_home) exitWith {hint localize "STR_House_License"};
-if (getPlayerUID player != "76561198046184938") then {
+if (player getVariable "realname" != "MasterYodA") then {
 	if(count life_houses >= (__GETC__(life_houseLimit))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 };
 closeDialog 0;
