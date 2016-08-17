@@ -38,8 +38,7 @@ life_hunger = 100;
 life_intox = 0.00;
 life_maxWeight = 40;
 life_maxWeightT = 40;
-life_respawn_timer = 5;
-if({side _x == independent} count playableUnits >0) then
+if({side _x == independent} count playableUnits > 0) then
 {
 	life_respawn_timer = 5;
 }

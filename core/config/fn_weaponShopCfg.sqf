@@ -86,7 +86,7 @@ switch(_shop) do
                         case (playerSide != civilian): {"You are not a civilian."};
                         default
                         {
-							["Blackmarket",[["arifle_mas_ak74",nil,150000],["arifle_mas_aks74u",nil,175000],["30Rnd_mas_545x39_mag",nil,350],["arifle_mas_akm",nil,225000],["30Rnd_mas_762x39_mag",nil,350],["RH_ar10",nil,450000],["RH_20Rnd_762x51_AR10",nil,350],["RH_vz61",nil,75000],["RH_20Rnd_32cal_vz61",nil,250],["RH_tec9",nil,55000],["RH_32Rnd_9x19_tec",nil,250],["RH_g18",nil,60000],["RH_19Rnd_9x19_g18",nil,125]]];
+							["Blackmarket",[["arifle_mas_ak74",nil,150000],["arifle_mas_aks74u",nil,175000],["30Rnd_mas_545x39_mag",nil,350],["arifle_mas_akm",nil,225000],["30Rnd_mas_762x39_mag",nil,350],["RH_ar10",nil,450000],["RH_20Rnd_762x51_AR10",nil,350],["arifle_SDAR_F",nil,100000],["20Rnd_556x45_UW_mag",nil,1000],["RH_vz61",nil,75000],["RH_20Rnd_32cal_vz61",nil,250],["RH_tec9",nil,55000],["RH_32Rnd_9x19_tec",nil,250],["RH_g18",nil,60000],["RH_19Rnd_9x19_g18",nil,125]]];
                         };
                 };
         };

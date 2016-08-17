@@ -13,7 +13,6 @@ switch (true) do {
 	case (_house in ["Land_i_Addon_02_V1_F"]): {[250000,1]};
 	case (_house in ["Land_Slum_House01_F","Land_Slum_House03_F","Land_Slum_House02_F","Land_cargo_house_slum_F"]): {[150000,1]};
 	case (_house in ["Land_Offices_01_V1_F","Land_MilOffices_V1_F"]): {[3000000,5]};
-	case (_house in ["Land_i_Shed_Ind_F"]): {[2000000,4]};
 	case (_house in ["Land_mbg_ger_pub_1","Land_mbg_ger_pub_2"]): {[4000000,4]};
 	case (_house in ["Land_e76_us_house02a","Land_e76_us_house01","Land_e76_us_house01a","Land_e76_us_house01a","Land_e76_us_house01b"]): {[1000000,4]};
 	case (_house in ["Land_A_Villa_EP1"]): {[5000000,6]};
