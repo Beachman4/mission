@@ -33,7 +33,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 			};
 			sleep 0.27;
-			_cP = _cP + 0.01;
+			_cP = _cP + 0.02;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1) exitWith {};
@@ -47,7 +47,6 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
-		player removeItem "ToolKit";
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};

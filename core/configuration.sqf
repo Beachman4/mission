@@ -300,7 +300,7 @@ buy_array =
 	["tbacon",75],
 	["lockpick",150],
 	["pickaxe",1200],
-	["redgull",1500],
+	["redgull",500],
 	["fuelF",850],
 	["wheat",1000],
 	["sunflower",1000],
